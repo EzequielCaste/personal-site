@@ -1,10 +1,10 @@
-import { useState } from "react";
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
-  const router = useRouter()
+  const router = useRouter();
 
   const toggleMenu = () => {
     setMenuToggle(!menuToggle);
@@ -58,17 +58,23 @@ export const Navbar = () => {
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="hidden sm:block">
               <div className="flex space-x-4">
-                <Link
-                  href="/"
-                  
-                >
-                  <a className={`text-white px-3 py-2 rounded-md text-sm font-medium ${router.pathname === '/' && 'bg-gray-900' }`}>Home</a>
+                <Link href="/">
+                  <a
+                    className={`text-white px-3 py-2 rounded-md text-sm font-medium ${
+                      router.pathname === '/' && 'bg-gray-900'
+                    }`}
+                  >
+                    Home
+                  </a>
                 </Link>
-                <Link
-                  href="/blog"
-                  
-                >
-                  <a className={`text-white px-3 py-2 rounded-md text-sm font-medium  ${router.pathname === '/blog' && 'bg-gray-900'}`}>Blog</a>
+                <Link href="/blog">
+                  <a
+                    className={`text-white px-3 py-2 rounded-md text-sm font-medium  ${
+                      router.pathname === '/blog' && 'bg-gray-900'
+                    }`}
+                  >
+                    Blog
+                  </a>
                 </Link>
               </div>
             </div>
@@ -81,14 +87,14 @@ export const Navbar = () => {
                 href="/"
                 className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
               >
-                <a 
-                className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">
+                  Home
+                </a>
               </Link>
-              <Link
-                href="/blog"
-              >
-                <a 
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Blog</a>
+              <Link href="/blog">
+                <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                  Blog
+                </a>
               </Link>
             </div>
           )}

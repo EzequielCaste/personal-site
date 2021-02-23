@@ -1,6 +1,6 @@
-import { HOME_OG_IMAGE_URL, GITHUB_REPOSITORY } from "../lib/constants";
-import Head from "next/head";
-import { Navbar } from "../components/navbar";
+import { HOME_OG_IMAGE_URL, GITHUB_REPOSITORY } from '../lib/constants';
+import Head from 'next/head';
+import { Navbar } from '../components/navbar';
 
 export default function Layout({ preview, children }) {
   return (
@@ -24,11 +24,7 @@ export default function Layout({ preview, children }) {
           href="/favicon/favicon-16x16.png"
         />
         {/* <link rel="manifest" href="/favicon/site.webmanifest" /> */}
-      <link
-        rel="mask-icon"
-        href="icon.svg"
-        color="#000000"
-      />
+        <link rel="mask-icon" href="icon.svg" color="#000000" />
         <link rel="shortcut icon" href="favicon.ico" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
@@ -36,6 +32,13 @@ export default function Layout({ preview, children }) {
           content="/favicon/browserconfig.xml"
         />
         <meta name="theme-color" content="#000" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;&display=swap"
+          rel="stylesheet"
+        ></link>
+
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         <meta name="description" content="This is my personal website" />
         <meta property="og:image" content={HOME_OG_IMAGE_URL} />

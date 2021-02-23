@@ -4,6 +4,8 @@ import Layout from '../components/layout';
 import { getAllPosts } from '../lib/api';
 import Head from 'next/head';
 import { MAIN_TITLE } from '../lib/constants';
+import { generateRss } from '../lib/rss';
+import fs from 'fs';
 
 export default function Index({ allPosts }) {
   const heroPost = allPosts[0];
@@ -18,9 +20,7 @@ export default function Index({ allPosts }) {
         {heroPost && (
           <HeroPost
             title={heroPost.title}
-            coverImage={heroPost.coverImage}
             date={heroPost.date}
-            author={heroPost.author}
             slug={heroPost.slug}
             excerpt={heroPost.excerpt}
           />
@@ -32,14 +32,11 @@ export default function Index({ allPosts }) {
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ]);
+  const allPosts = getAllPosts(['title', 'date', 'slug', 'excerpt', 'content']);
+
+  const rss = await generateRss(allPosts);
+
+  fs.writeFileSync('./public/rss.xml', rss);
 
   return {
     props: { allPosts },

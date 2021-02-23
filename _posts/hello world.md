@@ -1,19 +1,37 @@
 ---
-title: 'Learn How to Pre-render Pages Using Static Generation with Next.js'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
-coverImage: '/assets/blog/hello-world/cover.jpg'
-date: '2020-03-16T05:35:07.322Z'
-author:
-  name: Tim Neutkens
-  picture: '/assets/blog/authors/tim.jpeg'
+title: 'Hello World!'
+excerpt: 'Hello, good evening and welcome to The Middle of the Film. Actually, this is the beginning of my blog, the very first post ever! Having said that, Welcome!'
+date: '2020-03-12T05:35:07.322Z'
 ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+## Hello World!
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+![Welcome!](https://y.yarn.co/9ad103b2-da58-41dd-9270-e59ad61dba2e_screenshot.jpg)
 
-## Lorem Ipsum
+> Hello, good evening and welcome to The Middle of the Blog.
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+Actually, this is the beginning of my blog, the very first post ever! Having said that, Welcome!
+
+## About me
+
+Hi there! My name is Ezequiel Castellanos and I'm a Front-end web developer and English/Spanish translator. I enjoy making websites, drinking [mate](<https://en.wikipedia.org/wiki/Mate_(drink)>) and baking homemade pizza 🍕. I started creating websites as a hobby and now I've realized this can be more than a hobby. So I started to teach myself **HTML, CSS and JavaScript**, thanks to the great developer community at freeCodeCamp. Currently learning more in depth **React.js**, **Next.js**, **Tailwind CSS** and **SASS**.
+
+## My story
+
+Back in the early 2010's I was studying Systems Engineering thinking it was somewhat related to programming, I was way off. My first _programming experience_ was with Visual Basic, later C and now JavaScript.
+
+I was young and eager to learn how to make computers do stuff, so I started programming on my own. After experimenting with Visual Basic 6, I built my first html/css web pages and hosted them on geocities or angelfire. Fortunately, no historical records exists of those sites.
+
+Later in college we learned how to code in C, this is when I _actually_ started to learn how to code. **Pseudocode, Array data structure, Multidimensional arrays and Algorithms** were some of the fundamental topics we learned. The main focus of our teacher was that we acquire problem-solving skills, I remember his first response to any of our questions was:
+
+> did you do it on paper?
+
+Fast-forward to a few years later, I decided to make a carrear change and focus on Web Development. Fortunately, the developer community has been very helpful and welcoming. For anyone who is interested in learning Web Development and doesn't know where to start, I recommend to start with [freeCodeCamp](https://www.freecodecamp.org), since they have a learning path and curriculum structure set out for anyone to follow. They also have a forum in case you have any questions.
+
+## The Blog
+
+This blog is a nice little fun project I'm building with the help of [Manuel Obregozo](https://www.manuelobregozo.com/). He's been helping me on my developer path with great advice and encouraging me to apply to as many jobs as possible. **First Dev Job here I come!** 🚀
+
+The main idea of this site is to have a working blog and add updates and features in small increments. For a start, the blog is developed with Next.js and Tailwind CSS. I will try to detail all the challenges and obstacles that appear during the development of this blog. Stay tuned! 👋

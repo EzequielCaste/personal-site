@@ -1,0 +1,40 @@
+
+    <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+      <channel>
+        <title>Ezequiel's Blog</title>
+        <link>http://ezecaste-blog.netlify.com</link>
+        <description>Blog page for Ezequiel</description>
+        <language>en</language>
+        <lastBuildDate>Thu, 12 Mar 2020 05:35:07 GMT</lastBuildDate>
+        <atom:link href="http://ezecaste-blog.netlify.com" rel="self" type="application/rss+xml"/>
+        
+    <item>
+      <guid>http://ezecaste-blog.netlify.com/posts/hello world</guid>
+      <title>Hello World!</title>
+      <description>Hello, good evening and welcome to The Middle of the Film. Actually, this is the beginning of my blog, the very first post ever! Having said that, Welcome!</description>
+      <link>http://ezecaste-blog.netlify.com/posts/hello world</link>
+      <pubDate>Thu, 12 Mar 2020 05:35:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>Hello World!</h2>
+<p><img src="https://y.yarn.co/9ad103b2-da58-41dd-9270-e59ad61dba2e_screenshot.jpg" alt="Welcome!"></p>
+<blockquote>
+<p>Hello, good evening and welcome to The Middle of the Blog.</p>
+</blockquote>
+<p>Actually, this is the beginning of my blog, the very first post ever! Having said that, Welcome!</p>
+<h2>About me</h2>
+<p>Hi there! My name is Ezequiel Castellanos and I'm a Front-end web developer and English/Spanish translator. I enjoy making websites, drinking <a href="https://en.wikipedia.org/wiki/Mate_(drink)">mate</a> and baking homemade pizza 🍕. I started creating websites as a hobby and now I've realized this can be more than a hobby. So I started to teach myself <strong>HTML, CSS and JavaScript</strong>, thanks to the great developer community at freeCodeCamp. Currently learning more in depth <strong>React.js</strong>, <strong>Next.js</strong>, <strong>Tailwind CSS</strong> and <strong>SASS</strong>.</p>
+<h2>My story</h2>
+<p>Back in the early 2010's I was studying Systems Engineering thinking it was somewhat related to programming, I was way off. My first <em>programming experience</em> was with Visual Basic, later C and now JavaScript.</p>
+<p>I was young and eager to learn how to make computers do stuff, so I started programming on my own. After experimenting with Visual Basic 6, I built my first html/css web pages and hosted them on geocities or angelfire. Fortunately, no historical records exists of those sites.</p>
+<p>Later in college we learned how to code in C, this is when I <em>actually</em> started to learn how to code. <strong>Pseudocode, Array data structure, Multidimensional arrays and Algorithms</strong> were some of the fundamental topics we learned. The main focus of our teacher was that we acquire problem-solving skills, I remember his first response to any of our questions was:</p>
+<blockquote>
+<p>did you do it on paper?</p>
+</blockquote>
+<p>Fast-forward to a few years later, I decided to make a carrear change and focus on Web Development. Fortunately, the developer community has been very helpful and welcoming. For anyone who is interested in learning Web Development and doesn't know where to start, I recommend to start with <a href="https://www.freecodecamp.org">freeCodeCamp</a>, since they have a learning path and curriculum structure set out for anyone to follow. They also have a forum in case you have any questions.</p>
+<h2>The Blog</h2>
+<p>This blog is a nice little fun project I'm building with the help of <a href="https://www.manuelobregozo.com/">Manuel Obregozo</a>. He's been helping me on my developer path with great advice and encouraging me to apply to as many jobs as possible. <strong>First Dev Job here I come!</strong> 🚀</p>
+<p>The main idea of this site is to have a working blog and add updates and features in small increments. For a start, the blog is developed with Next.js and Tailwind CSS. I will try to detail all the challenges and obstacles that appear during the development of this blog. Stay tuned! 👋</p>]]></content:encoded>
+    </item>
+  
+      </channel>
+    </rss>
+  
