@@ -4,7 +4,7 @@ import DateFormatter from '../components/date-formatter';
 export default function HeroPost({ title, date, excerpt, slug }) {
   return (
     <section>
-      <div className="mb-20 md:mb-28 mx-auto w-2/3 mt-10">
+      <div className="mb-20 md:mb-28 mx-auto w-2/3 mt-20">
         <div>
           <h3 className="my-4 text-6xl text-gray-900 font-bold lg:text-4xl leading-tight">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">

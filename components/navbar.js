@@ -11,7 +11,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-700">
+    <nav className="bg-gray-700 fixed w-full shadow-lg z-10">
       <div className="container mx-auto px-2">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">

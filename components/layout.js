@@ -1,6 +1,7 @@
 import { HOME_OG_IMAGE_URL, GITHUB_REPOSITORY } from '../lib/constants';
 import Head from 'next/head';
 import { Navbar } from '../components/navbar';
+import { Projects } from './Projects';
 
 export default function Layout({ preview, children }) {
   return (
@@ -50,11 +51,12 @@ export default function Layout({ preview, children }) {
         <meta property="og:image" content={HOME_OG_IMAGE_URL} />
       </Head>
       <Navbar />
-      <div className="container text-gray-900 mx-auto px-2 py-4">
+      <div className="text-gray-900 mx-auto py-4 h-screen">
         <main>{children}</main>
       </div>
+      <Projects />
       <footer className="bg-accent-1 border-t border-accent-2">
-        <div className="container mx-auto p-2">
+        <div className="container mx-auto p-20">
           <a
             href={`${GITHUB_REPOSITORY}`}
             className="font-bold hover:underline"
