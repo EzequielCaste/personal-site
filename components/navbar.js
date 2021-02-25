@@ -67,10 +67,10 @@ export const Navbar = () => {
                     Home
                   </a>
                 </Link>
-                <Link href="/blog">
+                <Link href="/posts">
                   <a
                     className={`text-white px-3 py-2 rounded-md text-sm font-medium  ${
-                      router.pathname === '/blog' && 'bg-gray-900'
+                      router.pathname.includes('/posts') && 'bg-gray-900'
                     }`}
                   >
                     Blog
@@ -91,7 +91,7 @@ export const Navbar = () => {
                   Home
                 </a>
               </Link>
-              <Link href="/blog">
+              <Link href="/posts">
                 <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   Blog
                 </a>
