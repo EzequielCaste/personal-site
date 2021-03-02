@@ -11,7 +11,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-700">
+    <nav className="bg-gray-700 fixed w-full shadow-lg z-10">
       <div className="container mx-auto px-2">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -67,10 +67,10 @@ export const Navbar = () => {
                     Home
                   </a>
                 </Link>
-                <Link href="/blog">
+                <Link href="/posts">
                   <a
                     className={`text-white px-3 py-2 rounded-md text-sm font-medium  ${
-                      router.pathname === '/blog' && 'bg-gray-900'
+                      router.pathname.includes('/posts') && 'bg-gray-900'
                     }`}
                   >
                     Blog
@@ -91,7 +91,7 @@ export const Navbar = () => {
                   Home
                 </a>
               </Link>
-              <Link href="/blog">
+              <Link href="/posts">
                 <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   Blog
                 </a>

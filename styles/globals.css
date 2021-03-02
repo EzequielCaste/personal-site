@@ -3,10 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
+  min-height: 100vh;
 }
 
 a {
@@ -16,4 +17,40 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.far,
+.fab {
+  animation-name: crazy-colors;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+a:nth-of-type(1) .fab {
+  animation-delay: 1s;
+}
+a:nth-of-type(2) .fab {
+  animation-delay: 2s;
+}
+a:nth-of-type(4) .fab {
+  animation-delay: 2.5s;
+}
+a:nth-of-type(5) .fab {
+  animation-delay: 1.5s;
+}
+@keyframes crazy-colors {
+  0% {
+    color: crimson;
+  }
+  25% {
+    color: mediumseagreen;
+  }
+  50% {
+    color: rebeccapurple;
+  }
+  75% {
+    color: fuchsia;
+  }
+  100% {
+    color: peru;
+  }
 }
