@@ -30,7 +30,7 @@ export default function Post({ post, morePosts, preview }) {
   return (
     <Layout preview={preview}>
       <>
-        <article className="prose lg:prose-xl w-2/3 mx-auto mb-32 text-gray-700">
+        <article className="prose md:prose-2xl md:w-11/12 lg:prose-3xl p-6 mx-auto my-10 lg:my-24 text-gray-700">
           <Head>
             <title>
               {post.title} | {MAIN_TITLE}

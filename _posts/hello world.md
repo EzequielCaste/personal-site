@@ -6,7 +6,7 @@ ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
 ---
 
-## Hello World!
+# Hello World!
 
 ![Welcome!](https://y.yarn.co/9ad103b2-da58-41dd-9270-e59ad61dba2e_screenshot.jpg)
 
@@ -16,7 +16,11 @@ Actually, this is the beginning of my blog, the very first post ever! Having sai
 
 ## About me
 
-Hi there! My name is Ezequiel Castellanos and I'm a Front-end web developer and English/Spanish translator. I enjoy making websites, drinking [mate](<https://en.wikipedia.org/wiki/Mate_(drink)>) and baking homemade pizza 🍕. I started creating websites as a hobby and now I've realized this can be more than a hobby. So I started to teach myself **HTML, CSS and JavaScript**, thanks to the great developer community at freeCodeCamp. Currently learning more in depth **React.js**, **Next.js**, **Tailwind CSS** and **SASS**.
+Hi there! My name is Ezequiel Castellanos and I'm a junior Front-end web developer and English/Spanish translator.
+
+I enjoy making websites, drinking [mate](<https://en.wikipedia.org/wiki/Mate_(drink)>), baking homemade pizza and bread, and also researching and learning about technology or science. When I'm not coding,
+
+I started creating websites as a hobby and now I've realized this can be more than a hobby. So I started to teach myself **HTML, CSS and JavaScript**, thanks to the great developer community at freeCodeCamp. Currently learning more in depth **React.js**, **Next.js**, **Tailwind CSS** and **SASS**.
 
 ## My story
 
@@ -28,7 +32,7 @@ Later in college we learned how to code in C, this is when I _actually_ started 
 
 > did you do it on paper?
 
-Fast-forward to a few years later, I decided to make a carrear change and focus on Web Development. Fortunately, the developer community has been very helpful and welcoming. For anyone who is interested in learning Web Development and doesn't know where to start, I recommend to start with [freeCodeCamp](https://www.freecodecamp.org), since they have a learning path and curriculum structure set out for anyone to follow. They also have a forum in case you have any questions.
+Fast-forward to a few years later, I decided to make a career change and focus on Web Development. Fortunately, the developer community has been very helpful and welcoming. For anyone who is interested in learning Web Development and doesn't know where to start, I recommend to start with [freeCodeCamp](https://www.freecodecamp.org), since they have a learning path and curriculum structure set out for anyone to follow. They also have a forum in case you have any questions.
 
 ## The Blog
 

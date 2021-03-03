@@ -21,7 +21,9 @@
 </blockquote>
 <p>Actually, this is the beginning of my blog, the very first post ever! Having said that, Welcome!</p>
 <h2>About me</h2>
-<p>Hi there! My name is Ezequiel Castellanos and I'm a Front-end web developer and English/Spanish translator. I enjoy making websites, drinking <a href="https://en.wikipedia.org/wiki/Mate_(drink)">mate</a> and baking homemade pizza 🍕. I started creating websites as a hobby and now I've realized this can be more than a hobby. So I started to teach myself <strong>HTML, CSS and JavaScript</strong>, thanks to the great developer community at freeCodeCamp. Currently learning more in depth <strong>React.js</strong>, <strong>Next.js</strong>, <strong>Tailwind CSS</strong> and <strong>SASS</strong>.</p>
+<p>Hi there! My name is Ezequiel Castellanos and I'm a junior Front-end web developer and English/Spanish translator.</p>
+<p>I enjoy making websites, drinking <a href="https://en.wikipedia.org/wiki/Mate_(drink)">mate</a>, baking homemade pizza and bread, and also researching and learning about technology or science. When I'm not coding,</p>
+<p>I started creating websites as a hobby and now I've realized this can be more than a hobby. So I started to teach myself <strong>HTML, CSS and JavaScript</strong>, thanks to the great developer community at freeCodeCamp. Currently learning more in depth <strong>React.js</strong>, <strong>Next.js</strong>, <strong>Tailwind CSS</strong> and <strong>SASS</strong>.</p>
 <h2>My story</h2>
 <p>Back in the early 2010's I was studying Systems Engineering thinking it was somewhat related to programming, I was way off. My first <em>programming experience</em> was with Visual Basic, later C and now JavaScript.</p>
 <p>I was young and eager to learn how to make computers do stuff, so I started programming on my own. After experimenting with Visual Basic 6, I built my first html/css web pages and hosted them on geocities or angelfire. Fortunately, no historical records exists of those sites.</p>
@@ -29,7 +31,7 @@
 <blockquote>
 <p>did you do it on paper?</p>
 </blockquote>
-<p>Fast-forward to a few years later, I decided to make a carrear change and focus on Web Development. Fortunately, the developer community has been very helpful and welcoming. For anyone who is interested in learning Web Development and doesn't know where to start, I recommend to start with <a href="https://www.freecodecamp.org">freeCodeCamp</a>, since they have a learning path and curriculum structure set out for anyone to follow. They also have a forum in case you have any questions.</p>
+<p>Fast-forward to a few years later, I decided to make a career change and focus on Web Development. Fortunately, the developer community has been very helpful and welcoming. For anyone who is interested in learning Web Development and doesn't know where to start, I recommend to start with <a href="https://www.freecodecamp.org">freeCodeCamp</a>, since they have a learning path and curriculum structure set out for anyone to follow. They also have a forum in case you have any questions.</p>
 <h2>The Blog</h2>
 <p>This blog is a nice little fun project I'm building with the help of <a href="https://www.manuelobregozo.com/">Manuel Obregozo</a>. He's been helping me on my developer path with great advice and encouraging me to apply to as many jobs as possible. <strong>First Dev Job here I come!</strong> 🚀</p>
 <p>The main idea of this site is to have a working blog and add updates and features in small increments. For a start, the blog is developed with Next.js and Tailwind CSS. I will try to detail all the challenges and obstacles that appear during the development of this blog. Stay tuned! 👋</p>]]></content:encoded>
