@@ -7,9 +7,13 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  min-height: 100vh;
 }
-
+#__next {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -21,34 +25,32 @@ a {
 .far,
 .fab {
   animation-name: crazy-colors;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 6s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 a:nth-of-type(1) .fab {
-  animation-delay: 1s;
+  animation-delay: 0.2s;
+  animation-direction: reverse;
 }
 a:nth-of-type(2) .fab {
-  animation-delay: 2s;
+  animation-delay: 0.4s;
 }
 a:nth-of-type(4) .fab {
-  animation-delay: 2.5s;
+  animation-delay: 0.5s;
 }
 a:nth-of-type(5) .fab {
-  animation-delay: 1.5s;
+  animation-delay: 0.8s;
 }
 @keyframes crazy-colors {
   0% {
-    color: crimson;
+    color: peru;
   }
-  25% {
-    color: mediumseagreen;
-  }
-  50% {
-    color: rebeccapurple;
-  }
-  75% {
+  33% {
     color: fuchsia;
+  }
+  66% {
+    color: blueviolet;
   }
   100% {
     color: peru;

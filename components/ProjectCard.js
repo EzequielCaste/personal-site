@@ -20,11 +20,11 @@ export const ProjectCard = ({ project }) => {
         <div className="font-medium text-2xl my-3">{name}</div>
         <div className="text-sm">{description}</div>
         <div className="flex justify-around mt-5">
-          <a href={demoLink}>
-            <div className={btn}>Demo</div>
+          <a className={btn} href={demoLink}>
+            Demo
           </a>
-          <a href={codeLink}>
-            <div className={btn}>Code</div>
+          <a className={btn} href={codeLink}>
+            Code
           </a>
         </div>
       </div>

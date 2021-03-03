@@ -1,7 +1,6 @@
 import { HOME_OG_IMAGE_URL, GITHUB_REPOSITORY } from '../lib/constants';
 import Head from 'next/head';
 import { Navbar } from '../components/navbar';
-import { Projects } from './Projects';
 
 export default function Layout({ preview, children }) {
   return (
@@ -39,29 +38,23 @@ export default function Layout({ preview, children }) {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         ></link>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-          crossorigin="anonymous"
-        />
 
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         <meta name="description" content="This is my personal website" />
         <meta property="og:image" content={HOME_OG_IMAGE_URL} />
       </Head>
       <Navbar />
-      <div className="text-gray-900 mx-auto py-4 h-screen">
+      <div className="text-gray-900 mx-auto py-4 lg:py-0">
         <main>{children}</main>
       </div>
-      <Projects />
-      <footer className="bg-accent-1 border-t border-accent-2">
-        <div className="container mx-auto p-20">
+
+      <footer className="text-center bg-accent-1 border-t border-accent-2">
+        <div className="container mx-auto py-3">
           <a
             href={`${GITHUB_REPOSITORY}`}
-            className="font-bold hover:underline"
+            className="font-medium hover:underline"
           >
-            View on GitHub
+            Code for this site is on GitHub
           </a>
         </div>
       </footer>

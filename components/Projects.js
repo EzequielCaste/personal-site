@@ -10,7 +10,11 @@ export const Projects = () => {
       </h2>
       <div className="grid grid-cols-3 gap-6">
         {projects.map((project) => (
-          <ProjectCard project={project} key={project.title} />
+          <ProjectCard
+            key={project.name}
+            project={project}
+            key={project.title}
+          />
         ))}
       </div>
     </div>
