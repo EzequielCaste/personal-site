@@ -8,8 +8,8 @@ import { Linkedin } from './Linkedin';
 export default function Home() {
   return (
     <div className="m-3.5 p-5 space-y-5 flex flex-col justify-center items-center sm:justify-between">
-      <div className="py-10 lg:py-0">
-        <h1 className="text-4xl text-center py-5 font-bold sm:text-5xl xl:text-6xl xl:py-10">
+      <div className="py-5 lg:py-0">
+        <h1 className="text-4xl text-center py-5 font-bold sm:text-5xl xl:text-6xl xl:py-10 xl:my-4">
           Hi!👋
           <br /> I'm Ezequiel.
         </h1>
@@ -17,18 +17,13 @@ export default function Home() {
           Front-end developer and English/Spanish translator.
         </h3>
 
-        <div className="text-xl space-y-4 my-10 sm:w-4/5 mx-auto sm:space-y-8 lg:w-3/6 lg:text-2xl">
+        <div className="text-xl space-y-4 my-10 sm:w-4/5 mx-auto sm:space-y-8 lg:text-2xl xl:space-y-2 xl:my-4 xl:w-4/5">
           <p>
             I enjoy making websites, drinking
             <a href="https://en.wikipedia.org/wiki/Mate_(drink)"> mate</a> and
             baking homemade pizza 🍕.​
           </p>
-          <p>
-            I started creating websites as a hobby and now I&#x27;ve realized
-            this can be more than a hobby. So I decided to learn{' '}
-            <strong>HTML, CSS and JavaScript</strong>, thanks to the great
-            developer community at freeCodeCamp and FrontEndCafé.
-          </p>
+
           <p>
             Currently learning more in depth <strong>React.js</strong>,{' '}
             <strong>Next.js</strong>, <strong>Tailwind CSS</strong> and{' '}

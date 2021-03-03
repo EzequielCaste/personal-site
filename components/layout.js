@@ -44,7 +44,7 @@ export default function Layout({ preview, children }) {
         <meta property="og:image" content={HOME_OG_IMAGE_URL} />
       </Head>
       <Navbar />
-      <div className="text-gray-900 mx-auto py-4 lg:py-0">
+      <div className="text-gray-900 mx-auto py-4 w-full lg:py-0 lg:my-auto my-10">
         <main>{children}</main>
       </div>
 
@@ -54,7 +54,7 @@ export default function Layout({ preview, children }) {
             href={`${GITHUB_REPOSITORY}`}
             className="font-medium hover:underline"
           >
-            Code for this site is on GitHub
+            View code on GitHub
           </a>
         </div>
       </footer>

@@ -6,7 +6,7 @@ ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
 ---
 
-## Hello World!
+# Hello World!
 
 ![Welcome!](https://y.yarn.co/9ad103b2-da58-41dd-9270-e59ad61dba2e_screenshot.jpg)
 
@@ -16,11 +16,9 @@ Actually, this is the beginning of my blog, the very first post ever! Having sai
 
 ## About me
 
-Hi there! My name is Ezequiel Castellanos and I'm a junior Front-end web developer and English/Spanish translator. 
+Hi there! My name is Ezequiel Castellanos and I'm a junior Front-end web developer and English/Spanish translator.
 
-I enjoy making websites, drinking [mate](<https://en.wikipedia.org/wiki/Mate_(drink)>), baking homemade pizza and bread, and also researching and learning about technology or science. When I'm not coding, 
-
-
+I enjoy making websites, drinking [mate](<https://en.wikipedia.org/wiki/Mate_(drink)>), baking homemade pizza and bread, and also researching and learning about technology or science. When I'm not coding,
 
 I started creating websites as a hobby and now I've realized this can be more than a hobby. So I started to teach myself **HTML, CSS and JavaScript**, thanks to the great developer community at freeCodeCamp. Currently learning more in depth **React.js**, **Next.js**, **Tailwind CSS** and **SASS**.
 
