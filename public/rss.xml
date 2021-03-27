@@ -14,7 +14,7 @@
       <description>Hello, good evening and welcome to The Middle of the Film. Actually, this is the beginning of my blog, the very first post ever! Having said that, Welcome!</description>
       <link>http://ezecaste-blog.netlify.com/posts/hello world</link>
       <pubDate>Thu, 12 Mar 2020 05:35:07 GMT</pubDate>
-      <content:encoded><![CDATA[<h2>Hello World!</h2>
+      <content:encoded><![CDATA[<h1>Hello World!</h1>
 <p><img src="https://y.yarn.co/9ad103b2-da58-41dd-9270-e59ad61dba2e_screenshot.jpg" alt="Welcome!"></p>
 <blockquote>
 <p>Hello, good evening and welcome to The Middle of the Blog.</p>
@@ -35,6 +35,163 @@
 <h2>The Blog</h2>
 <p>This blog is a nice little fun project I'm building with the help of <a href="https://www.manuelobregozo.com/">Manuel Obregozo</a>. He's been helping me on my developer path with great advice and encouraging me to apply to as many jobs as possible. <strong>First Dev Job here I come!</strong> 🚀</p>
 <p>The main idea of this site is to have a working blog and add updates and features in small increments. For a start, the blog is developed with Next.js and Tailwind CSS. I will try to detail all the challenges and obstacles that appear during the development of this blog. Stay tuned! 👋</p>]]></content:encoded>
+    </item>
+  
+    <item>
+      <guid>http://ezecaste-blog.netlify.com/posts/user table challenge</guid>
+      <title>Advanced Frontend Challenge</title>
+      <description>This was probably NOT the best first challenge for someone who is looking for their first Dev Job, but anyway... here I go!</description>
+      <link>http://ezecaste-blog.netlify.com/posts/user table challenge</link>
+      <pubDate>Thu, 12 Mar 2020 05:35:07 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Last week I received a message on Linkedin from a co-founder of a company, saying that they were looking for Ssr Frontend Developers who knew react.js.  I replied that I was interested in the position and sent them my Resume.  Some moments later, they asked if I was ready to complete a Challenge in order for them to get to know my skills. The file was named:</p>
+<blockquote>
+<p>Advanced Frontend Test.pdf</p>
+</blockquote>
+<p>Oh yeah, and you have 1 (one) week to complete the challenge.</p>
+<p>I knew it was going to be hard, mostly due to the time limitation, since the actual requirements of the test were not that complicated.</p>
+<h3>The Challenge</h3>
+<ul>
+<li>Create a user login page</li>
+<li>Build a table with mock user data</li>
+<li>Add filter and sorting capabilities to the table</li>
+<li>Be able to edit users (in a modal)</li>
+<li>Be able to delete users</li>
+<li>For each user show a modal that displays times a user has logged in, using a graph.</li>
+<li>Add real-time WebSocket graphs:
+<ul>
+<li>CPU usage (every 1s)</li>
+<li>RAM (every 1s)</li>
+<li>Total bandwidth usage (every 1s)</li>
+</ul>
+</li>
+<li>In the user index, add a map with user geolocation, for each click on a table row will center the map on that user. When users are deleted, remove them from the map.  [Optional]</li>
+</ul>
+<p>Got it?</p>
+<p>In one week.... let's get to work!</p>
+<h2>Start with the basics</h2>
+<p>First step is to create our project:</p>
+<pre><code class="language-javascript">npx create-react-app user-table-challenge
+</code></pre>
+<p>Once the project folder is created let's clean up some of the files we don't need:</p>
+<pre><code>cd user-table-challenge
+
+code .
+</code></pre>
+<p>I like to clean up my <code>src</code> folder to only have  index.js, index.css and App.js. But that's just my person preference.</p>
+<p><img src="https://i.imgur.com/AZsq42M.png" alt="image-20210315212201842"></p>
+<p>Before we start building our components, lets install <strong>Tailwind CSS</strong>.</p>
+<p>Tailwind CSS is a "utility-first" CSS framework that provides a vast catalog of CSS classes and tools that will allow us to easily start styling our application.</p>
+<p>I recommend <a href="https://tailwindcss.com/docs/guides/create-react-app#setting-up-tailwind-css">following this guide</a> since the installation can be a bit tricky for our CRA configuration and it involves updating your package.json and creating a couple of configuration files.</p>
+<h3>Login component</h3>
+<p>Once we have cleaned up our project folder we can start working on our front end. Let start by building the Login form. It's going to be pretty simple: two input fields (one for email and the other for password) and a login button.</p>
+<p>I'm using my custom hook <code>useForm</code> to manage our controlled inputs. This hook receives the initial values of the form and returns the controlled input values and a method to handle the changes.</p>
+<pre><code class="language-react">import React from 'react';
+import { useForm } from '../hooks/useForm';
+
+export const Login = () => {
+  const initialValues = {
+    email: '',
+    password: '',
+  };
+  const inputStyle = 'p-2 text-gray-900 bg-gray-200 rounded';
+  const [formValues, handleInputChange] = useForm(initialValues);
+  const { email, password } = formValues;
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('form submitted');
+  };
+
+  return (
+    &#x3C;div className="w-1/4 mx-auto">
+      &#x3C;div className="space-y-4 p-8 border bg-gray-50 rounded">
+        &#x3C;h1 className="text-xl font-bold">Login Page&#x3C;/h1>
+        &#x3C;form onSubmit={handleSubmit} className="flex flex-col">
+          &#x3C;label htmlFor="email">Email&#x3C;/label>
+          &#x3C;input
+            required
+            id="email"
+            name="email"
+            className={inputStyle}
+            type="email"
+            placeholder=""
+            onChange={handleInputChange}
+            value={email}
+          />
+          &#x3C;label htmlFor="password">Password&#x3C;/label>
+          &#x3C;input
+            required
+            minLength="6"
+            id="password"
+            name="password"
+            onChange={handleInputChange}
+            value={password}
+            className={inputStyle}
+            type="password"
+            placeholder=""
+          />
+          &#x3C;button className="my-4 p-4 text-gray-50 bg-gray-600 rounded">
+            Ingresar
+          &#x3C;/button>
+        &#x3C;/form>
+      &#x3C;/div>
+    &#x3C;/div>
+  );
+};
+
+
+
+</code></pre>
+<p><img src="https://i.imgur.com/tG2jpF0.png" alt="login component"></p>
+<h3>Table component</h3>
+<p>Now lets build our Table component, which will show information of all the users in our DB. But before we start building our table we need some mock information to fill the table. There are many websites that offer mock data generation, the one I consider the most customizable was <a href="https://next.json-generator.com/">JSON Generator</a>.</p>
+<p>The challenge requires that we display the following user information: Name, Surname, Email, Address, ID and Registration Date.</p>
+<p>React-Table <a href="https://react-table.tanstack.com/docs/installation">Installation Guide</a></p>
+<p>I found these videos on youtube and they explain how to create a basic table using React-Table and a Sorting Table, which is going to be useful because one of the requirements is that our table is sortable.</p>
+<p>Basic Table: <a href="https://www.youtube.com/watch?v=hson9BXU9F8">https://www.youtube.com/watch?v=hson9BXU9F8</a></p>
+<p>Sortable Table: <a href="https://www.youtube.com/watch?v=zypbcG3ZVnc">https://www.youtube.com/watch?v=zypbcG3ZVnc</a></p>
+<p><img src="https://i.imgur.com/R5hbgcR.png" alt=""></p>
+<p>The tricky part was fixing the Registration Date to be sorted in the correct order and not alphabetically. I found that using <code>moment.js</code> and converting to ISO String works fine:</p>
+<pre><code class="language-javascript">// columns.js
+{
+    Header: 'Registration',
+    accessor: (c) => new Date(c.registration).toISOString(),
+    Cell: (c) => {
+      return moment(c.value).format('l');
+    },
+  },
+</code></pre>
+<p>2 down 1 to go...</p>
+<p>We now have a sortable Table with mock user data, now we need to add filters for each of the table headers. For that we need to build a ColumnFilter component that will render a simple text input.</p>
+<pre><code class="language-react">import React from 'react';
+
+export const ColumnFilter  = ({ column }) => {
+  const { filterValue, setFilter } = column;
+  return (
+    &#x3C;span>
+      Search:
+      &#x3C;input
+        value={filterValue || ''}
+        onChange={(e) => setFilter(e.target.value)}
+      />
+    &#x3C;/span>
+  );
+};
+
+</code></pre>
+<p>Now we add this component in <code>columns.js</code> to the Filter property of each table header:</p>
+<pre><code class="language-javascript">// columns.js
+import { ColumnFilter } from '../components/ColumnFilter';
+
+export const COLUMNS = [
+  {
+    Header: 'Nombre',
+    accessor: 'nombre',
+    Filter: ColumnFilter,
+  },
+</code></pre>
+<p><strong>Note:</strong> all table headers that you want to filter must have this Filter property set to the filter component we created earlier.</p>
+<p>Column Filtering <a href="https://youtu.be/2U9eVClAqh0">https://youtu.be/2U9eVClAqh0</a></p>]]></content:encoded>
     </item>
   
       </channel>

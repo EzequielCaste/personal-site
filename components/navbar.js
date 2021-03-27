@@ -60,16 +60,25 @@ export const Navbar = () => {
               <div className="flex space-x-4">
                 <Link href="/">
                   <a
-                    className={`text-white px-3 py-2 rounded-md text-sm font-medium ${
+                    className={`text-white px-3 py-2 hover:bg-gray-900 rounded-md text-sm font-medium ${
                       router.pathname === '/' && 'bg-gray-900'
                     }`}
                   >
                     Home
                   </a>
                 </Link>
+                <Link href="/about">
+                  <a
+                    className={`text-white px-3 py-2 hover:bg-gray-900 rounded-md text-sm font-medium  ${
+                      router.pathname.includes('/about') && 'bg-gray-900'
+                    }`}
+                  >
+                    About me
+                  </a>
+                </Link>
                 <Link href="/posts">
                   <a
-                    className={`text-white px-3 py-2 rounded-md text-sm font-medium  ${
+                    className={`text-white px-3 py-2 hover:bg-gray-900 rounded-md text-sm font-medium  ${
                       router.pathname.includes('/posts') && 'bg-gray-900'
                     }`}
                   >
@@ -89,6 +98,11 @@ export const Navbar = () => {
               >
                 <a className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">
                   Home
+                </a>
+              </Link>
+              <Link href="/about">
+                <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                  About me
                 </a>
               </Link>
               <Link href="/posts">

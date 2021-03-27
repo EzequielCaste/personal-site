@@ -44,7 +44,7 @@ export default function Layout({ preview, children }) {
         <meta property="og:image" content={HOME_OG_IMAGE_URL} />
       </Head>
       <Navbar />
-      <div className="text-gray-900 mx-auto py-4 w-full lg:py-0 lg:my-auto my-10">
+      <div className="text-gray-900 mx-auto py-4 w-full lg:py-0 my-10 md:my-auto">
         <main>{children}</main>
       </div>
 
