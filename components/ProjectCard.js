@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const ProjectCard = ({project}) => {
   const {name, image, tags, description, codeLink, demoLink} = project;
@@ -7,19 +8,18 @@ export const ProjectCard = ({project}) => {
     'text-white px-3 py-2 rounded-md text-sm font-medium bg-gray-900 hover:bg-gray-800 transition-colors';
 
   return (
-    <div className="bg-gray-700 flex flex-col items-center p-5 rounded shadow-lg">
-      <a href={demoLink}>
+    <Link className="my-10" href={demoLink}>
+      <div className="mb-20 bg-gray-700 flex flex-col items-center p-10 rounded shadow-lg transform hover:scale-105 transition-transform cursor-pointer">
         <Image
           className="rounded-md"
           src={`/images/${image}`}
           width={300}
           height={200}
         />
-      </a>
-      <div className="">
-        <div className="font-medium text-2xl my-3">{name}</div>
-        <div className="text-md">{description}</div>
-        {/* <div className="flex justify-around mt-5">
+        <div className="">
+          <div className="font-medium text-2xl my-3">{name}</div>
+          <div className="text-md">{description}</div>
+          {/* <div className="flex justify-around mt-5">
           <a className={btn} href={demoLink}>
             Demo
           </a>
@@ -27,7 +27,8 @@ export const ProjectCard = ({project}) => {
             Code
           </a>
         </div> */}
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };

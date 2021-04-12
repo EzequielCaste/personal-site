@@ -8,9 +8,7 @@ import {Linkedin} from './Linkedin';
 export const Links = () => {
   return (
     <>
-      <div className="my-10 h-full w-10/12 lg:w-3/5 mx-auto space-y-4">
-        <h2 className=" font-bold text-4xl">Contact info</h2>
-
+      <div className="my-20 text-center h-full w-10/12 lg:w-3/5 mx-auto space-y-4">
         <div className="flex justify-center py-5">
           <a
             href="https://github.com/EzequielCaste"

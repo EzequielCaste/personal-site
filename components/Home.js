@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <>
       <Welcome />
+      <Links />
       <About />
       <Projects />
-      <Links />
     </>
   );
 }

@@ -7,7 +7,7 @@ export const Welcome = () => {
         Hi!👋
         <br /> I'm Ezequiel.
       </h1>
-      <h3 className="text-xl text-center font-bold mt-1 sm:text-2xl">
+      <h3 className="text-xl lg:text-4xl text-center font-bold mt-1 sm:text-2xl">
         Front-end developer and English/Spanish translator.
       </h3>
 

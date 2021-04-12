@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 
 export const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -67,22 +67,40 @@ export const Navbar = () => {
                     Home
                   </a>
                 </Link>
-                <Link href="/about">
+                <Link href="/#about">
                   <a
-                    className={`text-white px-3 py-2 hover:bg-gray-900 rounded-md text-sm font-medium  ${
-                      router.pathname.includes('/about') && 'bg-gray-900'
-                    }`}
+                    onClick={toggleMenu}
+                    className="text-white px-3 py-2 hover:bg-gray-900 rounded-md text-sm font-medium"
                   >
-                    About me
+                    About Me
                   </a>
                 </Link>
-                <Link href="/posts">
+                {/* <Link href="/posts">
                   <a
                     className={`text-white px-3 py-2 hover:bg-gray-900 rounded-md text-sm font-medium  ${
                       router.pathname.includes('/posts') && 'bg-gray-900'
                     }`}
                   >
                     Blog
+                  </a>
+                </Link> */}
+                <Link
+                  href={`${
+                    router.pathname.includes('/posts') ? '/' : '/#projects'
+                  }`}
+                >
+                  <a className="text-white px-3 py-2 hover:bg-gray-900 rounded-md text-sm font-medium active:bg-gray-900">
+                    Projects
+                  </a>
+                </Link>
+                <Link href="mailto:ezequiel.caste@gmail.com">
+                  <a className="text-white px-3 py-2 hover:bg-gray-900 rounded-md text-sm font-medium">
+                    Contact
+                  </a>
+                </Link>
+                <Link href="https://github.com/EzequielCaste/CV/raw/main/Ezequiel%20Castellanos%20Resume.pdf">
+                  <a className="text-gray-900 px-3 py-2 float-right bg-gray-300 rounded-md text-sm font-medium">
+                    Download CV
                   </a>
                 </Link>
               </div>
@@ -91,23 +109,50 @@ export const Navbar = () => {
         </div>
         <div className="sm:hidden" id="mobile-menu">
           {menuToggle && (
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link
-                href="/"
-                className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-              >
-                <a className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">
+            <div className="px-2 pt-2 pb-3 space-y-4">
+              <Link href="/">
+                <a
+                  onClick={toggleMenu}
+                  className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
                   Home
                 </a>
               </Link>
-              <Link href="/about">
-                <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                  About me
+              <Link href="/#about">
+                <a
+                  onClick={toggleMenu}
+                  className="text-gray-300 hover:bg-gray-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  About Me
                 </a>
               </Link>
-              <Link href="/posts">
-                <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+              {/* <Link href="/posts">
+                <a
+                  onClick={toggleMenu}
+                  className="text-gray-300 hover:bg-gray-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
                   Blog
+                </a>
+              </Link> */}
+              <Link href="#projects">
+                <a
+                  onClick={toggleMenu}
+                  className="text-white px-3 py-2 block hover:bg-gray-900 rounded-md text-sm font-medium"
+                >
+                  Projects
+                </a>
+              </Link>
+              <Link href="mailto:ezequiel.caste@gmail.com">
+                <a
+                  onClick={toggleMenu}
+                  className="text-white px-3 py-2 block hover:bg-gray-900 rounded-md text-sm font-medium"
+                >
+                  Contact
+                </a>
+              </Link>
+              <Link href="https://github.com/EzequielCaste/CV/raw/main/Ezequiel%20Castellanos%20Resume.pdf">
+                <a className="text-gray-900 px-3 py-2 bg-gray-300 rounded-md  text-sm font-medium">
+                  Download CV
                 </a>
               </Link>
             </div>
