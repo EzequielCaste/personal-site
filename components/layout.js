@@ -3,6 +3,8 @@ import Head from 'next/head';
 import {Navbar} from '../components/navbar';
 import {Twitter} from './Twitter';
 import {Linkedin} from './Linkedin';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faLinkedin, faTwitterSquare} from '@fortawesome/free-brands-svg-icons';
 
 export default function Layout({preview, children}) {
   return (
@@ -59,14 +61,22 @@ export default function Layout({preview, children}) {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Twitter size={4} />
+              <FontAwesomeIcon
+                className="w-4 text-gray-700"
+                icon={faTwitterSquare}
+              />
+
+              <i className="fab fa-twitter-square"></i>
             </a>{' '}
             <a
               href="https://www.linkedin.com/in/ezequiel-castellanos-a9ab6b1b8/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Linkedin size={4} />
+              <FontAwesomeIcon
+                className="w-4 text-gray-700"
+                icon={faLinkedin}
+              />
             </a>
           </div>
           <a

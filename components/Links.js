@@ -1,31 +1,34 @@
 import React from 'react';
-import {Github} from './Github';
-import {Twitter} from './Twitter';
-import {Email} from './Email';
-import {Codepen} from './Codepen';
-import {Linkedin} from './Linkedin';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {
+  faCodepen,
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 export const Links = () => {
   return (
     <>
-      <div className="my-20 text-center h-full w-10/12 lg:w-3/5 mx-auto space-y-4">
-        <div className="flex justify-center py-5">
+      <div className="my-20 text-center h-full w-10/12 lg:w-2/5 mx-auto space-y-4">
+        <div className="flex justify-between py-5">
           <a
             href="https://github.com/EzequielCaste"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Github size={14} />
+            <FontAwesomeIcon className="w-14 animate-icons" icon={faGithub} />
           </a>
           <a
             href="https://twitter.com/Ezequiel_Caste"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Twitter size={14} />
+            <FontAwesomeIcon className="w-14 animate-icons" icon={faTwitter} />
           </a>
-          <a href="#contact">
-            <Email size={14} />
+          <a href="mailto:ezequiel.caste@gmail.com">
+            <FontAwesomeIcon className="w-14 animate-icons" icon={faEnvelope} />
           </a>
           <a
             href="https://codepen.io/ezequiel_/"
@@ -33,14 +36,14 @@ export const Links = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Codepen size={14} />
+            <FontAwesomeIcon className="w-14 animate-icons" icon={faCodepen} />
           </a>
           <a
             href="https://www.linkedin.com/in/ezequiel-castellanos-a9ab6b1b8/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Linkedin size={14} />
+            <FontAwesomeIcon className="w-14 animate-icons" icon={faLinkedin} />
           </a>
         </div>
       </div>
