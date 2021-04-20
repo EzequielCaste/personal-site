@@ -96,7 +96,7 @@ export const Navbar = () => {
                 </Link>
                 <Link href="https://github.com/EzequielCaste/CV/raw/main/Ezequiel%20Castellanos%20Resume.pdf">
                   <a className="text-gray-900 px-3 py-2 float-right bg-gray-300 rounded-md text-sm font-medium">
-                    Download CV
+                    Download Resume
                   </a>
                 </Link>
               </div>
@@ -148,7 +148,7 @@ export const Navbar = () => {
               </Link>
               <Link href="https://github.com/EzequielCaste/CV/raw/main/Ezequiel%20Castellanos%20Resume.pdf">
                 <a className="text-gray-900 px-3 py-2 bg-gray-300 rounded-md  text-sm font-medium">
-                  Download CV
+                  Download Resume
                 </a>
               </Link>
             </div>
