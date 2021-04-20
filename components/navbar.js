@@ -75,22 +75,18 @@ export const Navbar = () => {
                     About Me
                   </a>
                 </Link>
-                {/* <Link href="/posts">
+                <Link href="/#projects">
+                  <a className="text-white px-3 py-2 hover:bg-gray-900 rounded-md text-sm font-medium active:bg-gray-900">
+                    Projects
+                  </a>
+                </Link>
+                <Link href="/posts">
                   <a
                     className={`text-white px-3 py-2 hover:bg-gray-900 rounded-md text-sm font-medium  ${
                       router.pathname.includes('/posts') && 'bg-gray-900'
                     }`}
                   >
                     Blog
-                  </a>
-                </Link> */}
-                <Link
-                  href={`${
-                    router.pathname.includes('/posts') ? '/' : '/#projects'
-                  }`}
-                >
-                  <a className="text-white px-3 py-2 hover:bg-gray-900 rounded-md text-sm font-medium active:bg-gray-900">
-                    Projects
                   </a>
                 </Link>
                 <Link href="mailto:ezequiel.caste@gmail.com">
@@ -126,20 +122,20 @@ export const Navbar = () => {
                   About Me
                 </a>
               </Link>
-              {/* <Link href="/posts">
-                <a
-                  onClick={toggleMenu}
-                  className="text-gray-300 hover:bg-gray-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Blog
-                </a>
-              </Link> */}
               <Link href="#projects">
                 <a
                   onClick={toggleMenu}
                   className="text-white px-3 py-2 block hover:bg-gray-900 rounded-md text-sm font-medium"
                 >
                   Projects
+                </a>
+              </Link>
+              <Link href="/posts">
+                <a
+                  onClick={toggleMenu}
+                  className="text-gray-300 hover:bg-gray-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Blog
                 </a>
               </Link>
               <Link href="mailto:ezequiel.caste@gmail.com">

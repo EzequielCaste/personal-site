@@ -34,16 +34,15 @@ export const About = () => {
       </div>
 
       <p>
-        Years later, I decided to study Systems Engineering thinking it would be
-        somewhat related to programming. It did not. 😥 So I started to dive
-        into the world of programming experimenting with Visual Basic 6, C and
-        later JavaScript.
+        Years later, I decided to study Systems Engineering expecting to dive
+        into programming, but it took a while (many courses) to finally get to
+        do some coding. So I started to investigate programming languages such
+        as Visual Basic 6, C and later JavaScript.
       </p>
       <p>I was young and eager to learn how to make computers do stuff.</p>
       <p>
-        Later in college we learned how to code in C, this is when I
-        <em> actually </em>
-        started to learn how to code.{' '}
+        Later in college we learned how to code in C, this is when I started to
+        learn new skills,{' '}
         <strong>
           Pseudocode, Array data structure, Multi-dimensional arrays and
           Algorithms
