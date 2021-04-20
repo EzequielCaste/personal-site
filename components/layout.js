@@ -53,7 +53,7 @@ export default function Layout({preview, children}) {
       </div>
 
       <footer className="text-center bg-gray-300 bg-accent-1 border-t border-accent-2">
-        <div className="container mx-auto py-3 flex justify-between">
+        <div className="container mx-auto p-3 flex justify-between">
           <div className="">
             2020 Ezequiel Castellanos{' '}
             <a
