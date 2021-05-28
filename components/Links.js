@@ -18,17 +18,29 @@ export const Links = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FontAwesomeIcon className="w-14 animate-icons" icon={faGithub} />
+            <FontAwesomeIcon
+              size="5x"
+              className="animate-icons"
+              icon={faGithub}
+            />
           </a>
           <a
             href="https://twitter.com/Ezequiel_Caste"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FontAwesomeIcon className="w-14 animate-icons" icon={faTwitter} />
+            <FontAwesomeIcon
+              size="5x"
+              className="animate-icons"
+              icon={faTwitter}
+            />
           </a>
           <a href="mailto:ezequiel.caste@gmail.com">
-            <FontAwesomeIcon className="w-14 animate-icons" icon={faEnvelope} />
+            <FontAwesomeIcon
+              size="5x"
+              className="animate-icons"
+              icon={faEnvelope}
+            />
           </a>
           <a
             href="https://codepen.io/ezequiel_/"
@@ -36,14 +48,22 @@ export const Links = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FontAwesomeIcon className="w-14 animate-icons" icon={faCodepen} />
+            <FontAwesomeIcon
+              size="5x"
+              className="animate-icons"
+              icon={faCodepen}
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/ezequiel-castellanos-a9ab6b1b8/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FontAwesomeIcon className="w-14 animate-icons" icon={faLinkedin} />
+            <FontAwesomeIcon
+              size="5x"
+              className="animate-icons"
+              icon={faLinkedin}
+            />
           </a>
         </div>
       </div>

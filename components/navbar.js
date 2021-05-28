@@ -61,7 +61,7 @@ export const Navbar = () => {
                 <Link href="/">
                   <a
                     className={`text-white px-3 py-2 hover:bg-gray-900 rounded-md text-sm font-medium ${
-                      router.pathname === '/' && 'bg-gray-900'
+                      router.pathname === '/' && 'hover:bg-gray-900'
                     }`}
                   >
                     Home
