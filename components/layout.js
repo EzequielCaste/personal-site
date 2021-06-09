@@ -1,14 +1,15 @@
-import {GITHUB_REPOSITORY} from '../lib/constants';
+import {GITHUB_REPOSITORY, MAIN_TITLE} from '../lib/constants';
 import Head from 'next/head';
 import {Navbar} from '../components/navbar';
-import {Twitter} from './Twitter';
-import {Linkedin} from './Linkedin';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faLinkedin, faTwitterSquare} from '@fortawesome/free-brands-svg-icons';
 
 export default function Layout({preview, children}) {
   return (
     <>
+      <Head>
+        <title>{MAIN_TITLE}</title>
+      </Head>
       <Navbar />
       <div className="text-gray-900 mx-auto w-full lg:py-0 my-10 md:my-auto">
         <main>{children}</main>
@@ -24,7 +25,7 @@ export default function Layout({preview, children}) {
               target="_blank"
             >
               <FontAwesomeIcon
-                size="md"
+                size="1x"
                 className="text-gray-700"
                 icon={faTwitterSquare}
               />
@@ -37,7 +38,7 @@ export default function Layout({preview, children}) {
               target="_blank"
             >
               <FontAwesomeIcon
-                size="md"
+                size="1x"
                 className="text-gray-700"
                 icon={faLinkedin}
               />
