@@ -1,9 +1,7 @@
 ---
 title: 'Hello World!'
 excerpt: 'Hello, good evening and welcome to The Middle of the Film. Actually, this is the beginning of my blog, the very first post ever! Having said that, Welcome!'
-date: '2020-04-20T05:35:07.322Z'
-ogImage:
-  url: '/assets/blog/hello-world/cover.jpg'
+date: '2021-04-20T05:35:07.322Z'
 ---
 
 # Hello World!

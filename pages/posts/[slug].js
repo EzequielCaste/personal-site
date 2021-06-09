@@ -1,28 +1,19 @@
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 import ErrorPage from 'next/error';
 import Layout from '../../components/layout';
-import { getPostBySlug, getAllPosts } from '../../lib/api';
+import {getPostBySlug, getAllPosts} from '../../lib/api';
 import Head from 'next/head';
-import { MAIN_TITLE } from '../../lib/constants';
+import {BLOG_SUBTITLE, HOME_OG_IMAGE_URL} from '../../lib/constants';
 import markdownToHtml from '../../lib/markdownToHtml';
 import ReactMarkdown from 'react-markdown';
-import Image from 'next/image';
 
 const renderers = {
   image: (image) => {
-    return (
-      <Image
-        src={image.src}
-        alt={image.alt}
-        width={882}
-        height={480}
-        layout="responsive"
-      />
-    );
+    return <img src={image.src} alt={image.alt} />;
   },
 };
 
-export default function Post({ post, morePosts, preview }) {
+export default function Post({post, morePosts, preview}) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -33,9 +24,15 @@ export default function Post({ post, morePosts, preview }) {
         <article className="prose md:prose-2xl md:w-11/12 lg:prose-3xl p-6 mx-auto my-10 lg:my-24 text-gray-700">
           <Head>
             <title>
-              {post.title} | {MAIN_TITLE}
+              {post.title} | {BLOG_SUBTITLE}
+              <link
+                rel="canonical"
+                href={encodeURI(
+                  `https://ezecastellanos.com.ar/posts/${post?.slug}`
+                )}
+              />
             </title>
-            <meta property="og:image" content={post.ogImage.url} />
+            <meta property="og:image" content={HOME_OG_IMAGE_URL} />
           </Head>
           <div className="markdown">
             <ReactMarkdown
@@ -50,7 +47,7 @@ export default function Post({ post, morePosts, preview }) {
   );
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({params}) {
   const post = getPostBySlug(params.slug, [
     'title',
     'date',

@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import DateFormatter from '../components/date-formatter';
 
-export default function HeroPost({ title, date, excerpt, slug }) {
+export default function HeroPost({title, date, excerpt, slug}) {
   return (
     <section>
       <div className="m-10 md:my-auto md:w-4/5 md:mx-auto xl:w-4/6">
         <div>
-          <h3 className="mt-14 text-4xl text-gray-900 font-bold lg:text-6xl leading-tight md:text-6xl ">
+          <h3 className="mt-14 sm:mt-28 text-4xl text-gray-900 font-bold lg:text-6xl leading-tight md:text-6xl ">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
               <a className="hover:text-gray-600">{title}</a>
             </Link>

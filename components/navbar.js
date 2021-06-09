@@ -105,7 +105,7 @@ export const Navbar = () => {
         </div>
         <div className="sm:hidden" id="mobile-menu">
           {menuToggle && (
-            <div className="px-2 pt-2 pb-3 space-y-4">
+            <div className="px-2 pt-2 pb-3 space-y-2">
               <Link href="/">
                 <a
                   onClick={toggleMenu}
@@ -147,7 +147,7 @@ export const Navbar = () => {
                 </a>
               </Link>
               <Link href="https://github.com/EzequielCaste/CV/raw/main/Ezequiel%20Castellanos%20Resume.pdf">
-                <a className="text-gray-900 px-3 py-2 bg-gray-300 rounded-md  text-sm font-medium">
+                <a className="block text-gray-900 px-3 py-2 bg-gray-300 rounded-md  text-sm font-medium">
                   Download Resume
                 </a>
               </Link>

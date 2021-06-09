@@ -1,19 +1,29 @@
 
     <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
       <channel>
-        <title>Ezequiel Castellanos | Frontend Developer</title>
+        <title>Ezequiel Castellanos | Front-end Developer</title>
         <link>http://ezecastellanos.com.ar</link>
         <description>Blog page for Ezequiel</description>
         <language>en</language>
-        <lastBuildDate>Mon, 20 Apr 2020 05:35:07 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Jun 2021 13:07:45 GMT</lastBuildDate>
         <atom:link href="http://ezecastellanos.com.ar" rel="self" type="application/rss+xml"/>
         
+    <item>
+      <guid>http://ezecastellanos.com.ar/posts/site update</guid>
+      <title>Updates to the Website!</title>
+      <description>It's been three months since the website was created, it's time for some updates</description>
+      <link>http://ezecastellanos.com.ar/posts/site update</link>
+      <pubDate>Wed, 09 Jun 2021 13:07:45 GMT</pubDate>
+      <content:encoded><![CDATA[<h1>Time for Updates!</h1>
+<p>Sometimes we forget</p>]]></content:encoded>
+    </item>
+  
     <item>
       <guid>http://ezecastellanos.com.ar/posts/hello world</guid>
       <title>Hello World!</title>
       <description>Hello, good evening and welcome to The Middle of the Film. Actually, this is the beginning of my blog, the very first post ever! Having said that, Welcome!</description>
       <link>http://ezecastellanos.com.ar/posts/hello world</link>
-      <pubDate>Mon, 20 Apr 2020 05:35:07 GMT</pubDate>
+      <pubDate>Tue, 20 Apr 2021 05:35:07 GMT</pubDate>
       <content:encoded><![CDATA[<h1>Hello World!</h1>
 <p><img src="https://y.yarn.co/9ad103b2-da58-41dd-9270-e59ad61dba2e_screenshot.jpg" alt="Welcome!"></p>
 <blockquote>
