@@ -1,6 +1,6 @@
 ---
 title: 'Check your <head>'
-excerpt: 'There are many steps to follow when designing and building a webpage, choosing a color scheme, determining which technologies to use, which hosting site, domain name, etc.'
+excerpt: 'What are meta tags and why are they important?'
 date: '2021-06-10T05:35:07.322Z'
 ---
 
@@ -111,9 +111,9 @@ Whenever a user Tweets a link to your content, the tweet will include a “Card�
 Once your twitter card tags are up and running you can use [this validator](https://cards-dev.twitter.com/validator) to check-out how it would look. The validator checks for the correct tags and gives you this message if everything went ok:
 
 ```javascript
-INFO:  Page fetched successfully 
+INFO:  Page fetched successfully
 INFO:  24 metatags were found
-INFO: twitter:card = summary tag found 
+INFO:  twitter:card = summary tag found
 INFO:  Card loaded successfully
 ```
 
