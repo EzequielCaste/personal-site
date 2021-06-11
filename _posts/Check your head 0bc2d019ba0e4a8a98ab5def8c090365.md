@@ -110,9 +110,11 @@ Whenever a user Tweets a link to your content, the tweet will include a “Card�
 
 Once your twitter card tags are up and running you can use [this validator](https://cards-dev.twitter.com/validator) to check-out how it would look. The validator checks for the correct tags and gives you this message if everything went ok:
 
-```html
-INFO:  Page fetched successfully INFO:  24 metatags were found INFO:
- twitter:card = summary tag found INFO:  Card loaded successfully
+```javascript
+INFO:  Page fetched successfully 
+INFO:  24 metatags were found
+INFO: twitter:card = summary tag found 
+INFO:  Card loaded successfully
 ```
 
 ---
