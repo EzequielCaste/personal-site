@@ -38,7 +38,6 @@ class MyDocument extends Document {
             property="og:title"
             content="Ezequiel Castellanos | Front-end Developer"
           />
-          <meta property="og:description" content="Personal Website and Blog" />
           <meta property="og:image" content={HOME_OG_IMAGE_URL} />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://ezecastellanos.com.ar" />
@@ -47,10 +46,6 @@ class MyDocument extends Document {
           <meta name="twitter:site" content="@Ezequiel_Caste" />
           <meta name="twitter:creator" content="@Ezequiel_Caste" />
           <meta name="twitter:title" content="Ezequiel Castellanos" />
-          <meta
-            name="twitter:description"
-            content="Personal Website and Blog"
-          />
           <meta name="twitter:url" content="https://ezecastellanos.com.ar" />
           <meta name="twitter:image" content={HOME_OG_IMAGE_URL} />
 

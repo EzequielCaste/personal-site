@@ -33,6 +33,13 @@ export default function Post({post, morePosts, preview}) {
                 )}
               />
             </title>
+            <meta property="og:description" content={post.excerpt} />
+            <meta
+              data-n-head="ssr"
+              data-hid="twitter:description"
+              name="twitter:description"
+              content={post.excerpt}
+            />
             <meta property="og:image" content={HOME_OG_IMAGE_URL} />
           </Head>
           <div className="markdown">
@@ -56,6 +63,7 @@ export async function getStaticProps({params}) {
     'author',
     'content',
     'ogImage',
+    'excerpt',
     'coverImage',
   ]);
   const content = await markdownToHtml(post.content || '');
