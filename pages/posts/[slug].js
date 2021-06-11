@@ -6,6 +6,7 @@ import Head from 'next/head';
 import {BLOG_SUBTITLE, HOME_OG_IMAGE_URL} from '../../lib/constants';
 import markdownToHtml from '../../lib/markdownToHtml';
 import ReactMarkdown from 'react-markdown';
+import {SocialShare} from '../../components/social-share';
 
 const renderers = {
   image: (image) => {
@@ -40,13 +41,13 @@ export default function Post({post, morePosts, preview}) {
               children={post.content}
               renderers={renderers}
             />
+            <SocialShare post={post} />
           </div>
         </article>
       </>
     </Layout>
   );
 }
-
 export async function getStaticProps({params}) {
   const post = getPostBySlug(params.slug, [
     'title',

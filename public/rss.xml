@@ -5,17 +5,109 @@
         <link>http://ezecastellanos.com.ar</link>
         <description>Blog page for Ezequiel</description>
         <language>en</language>
-        <lastBuildDate>Wed, 09 Jun 2021 13:07:45 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 10 Jun 2021 05:35:07 GMT</lastBuildDate>
         <atom:link href="http://ezecastellanos.com.ar" rel="self" type="application/rss+xml"/>
         
     <item>
-      <guid>http://ezecastellanos.com.ar/posts/site update</guid>
-      <title>Updates to the Website!</title>
-      <description>It's been three months since the website was created, it's time for some updates</description>
-      <link>http://ezecastellanos.com.ar/posts/site update</link>
-      <pubDate>Wed, 09 Jun 2021 13:07:45 GMT</pubDate>
-      <content:encoded><![CDATA[<h1>Time for Updates!</h1>
-<p>Sometimes we forget</p>]]></content:encoded>
+      <guid>http://ezecastellanos.com.ar/posts/Check your head 0bc2d019ba0e4a8a98ab5def8c090365</guid>
+      <title>Check your <head></title>
+      <description>There are many steps to follow when designing and building a webpage, choosing a color scheme, determining which technologies to use, which hosting site, domain name, etc.</description>
+      <link>http://ezecastellanos.com.ar/posts/Check your head 0bc2d019ba0e4a8a98ab5def8c090365</link>
+      <pubDate>Thu, 10 Jun 2021 05:35:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h1>Check your  🤔</h1>
+<p>There are many steps to follow when designing and building a webpage, choosing a color scheme, determining which technologies to use, which hosting site, domain name, etc. That is why it is important to plan <em>before</em> you start writing any line of code. But sometimes we're in a hurry, we want to build a quick webpage and get it uploaded fast. This is where <strong>mistakes</strong> are made. Like the saying goes:</p>
+<blockquote>
+<p><em>errare humanum est</em></p>
+</blockquote>
+<p>To err is human, we as humans will make mistakes, it is better to plan ahead and prevent them in the first place. Sometimes we focus so much on the design and functionality of a website that we forget to check if our  contain the basic recommended  elements.</p>
+<p>So what's the problem? No problem at all... This just goes to say that it's ok to make mistakes, we all do, Trainees. Juniors, Seniors and even those <strong><a href="https://media1.tenor.com/images/b3afd78db54dccbe7b3785e59dd45d3d/tenor.gif">LVL +9000</a></strong>. You're not the only one. Take a deep breath, relax, do some Google researching about the error, read some documentation or ask a fellow developer for help.</p>
+<hr>
+<p>Let's get back to the main topic of this post, checking your <strong></strong> so that it has all the right metadata.</p>
+<h2>What are meta tags?</h2>
+<p>Meta tags are fragments of text content that provide an outline or summary of the webpage. The  tag defines metadata about an HTML document. Metadata is data (information) about data.</p>
+<h2>Why are meta tags important?</h2>
+<p>The information provided in the meta tags will appear in search results and when someone shares a link to your site on social media or in chats.</p>
+<h2>What metadata should you include?</h2>
+<h3>Charset</h3>
+<pre><code class="language-html">&#x3C;meta charset="utf-8" />
+</code></pre>
+<p>This element specifies the document's character encoding.</p>
+<h3>Viewport</h3>
+<pre><code class="language-html">&#x3C;meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</code></pre>
+<p>The viewport is the user's visible area of a web page. Set the viewport to make your website look good on all devices.</p>
+<h3>Title</h3>
+<pre><code class="language-html">&#x3C;title>Ezequiel Castellanos | Front-end Developer&#x3C;/title>
+</code></pre>
+<p>The title element represents the title of the HTML document (not the content).</p>
+<h3>Author &#x26; Description</h3>
+<pre><code class="language-html">&#x3C;meta name="author" content="Ezequiel Castellanos" />
+&#x3C;meta name="description" content="Personal website and Blog" />
+</code></pre>
+<p>These two elements specify the author and provide a brief description of the page.</p>
+<hr>
+<h2>Open Graph Protocol (og)</h2>
+<p>Facebook invented the Open Graph protocol to provide more metadata for our websites to display when we share a link in social media. The link will now appear along with an image and description, much more captivating than a simple word link.</p>
+<pre><code class="language-html">&#x3C;meta
+  property="og:title"
+  content="Ezequiel Castellanos | Front-end Developer"
+/>
+&#x3C;meta property="og:type" content="website" />
+&#x3C;meta
+  property="og:image"
+  content="https://avatars.githubusercontent.com/u/51804994?s=400&#x26;amp;u=efe88c4acafeb4fe560f666482b1454dca508408&#x26;amp;v=4"
+/>
+&#x3C;meta property="og:url" content="https://ezecastellanos.com.ar" />
+
+&#x3C;meta property="og:site_name" content="Ezequiel Castellanos" />
+&#x3C;meta property="og:description" content="Personal Website and Blog" />
+</code></pre>
+<p><img src="/images/Check%20your%20head%200bc2d019ba0e4a8a98ab5def8c090365/Untitled.png" alt="Preview of how a link to a blog post would look like if posted on Facebook"><em>Preview of how a link to a blog post would look like if posted on Facebook</em></p>
+<hr>
+<h2>Twitter Cards</h2>
+<p>Similar to Open Graph Data, Twitter Cards allows you to attach images and description to Tweets.</p>
+<p>Whenever a user Tweets a link to your content, the tweet will include a “Card” that will be visible to their followers.</p>
+<pre><code class="language-html">&#x3C;meta name="twitter:card" content="summary" />
+&#x3C;meta name="twitter:site" content="@Ezequiel_Caste" />
+&#x3C;meta name="twitter:creator" content="@Ezequiel_Caste" />
+&#x3C;meta name="twitter:title" content="Ezequiel Castellanos" />
+&#x3C;meta name="twitter:description" content="Personal Website and Blog" />
+&#x3C;meta name="twitter:url" content="https://ezecastellanos.com.ar" />
+&#x3C;meta
+  name="twitter:image"
+  content="https://avatars.githubusercontent.com/u/51804994?s=400&#x26;amp;u=efe88c4acafeb4fe560f666482b1454dca508408&#x26;amp;v=4"
+/>
+</code></pre>
+<p><img src="/images/Check%20your%20head%200bc2d019ba0e4a8a98ab5def8c090365/Untitled%201.png" alt="Preview of a Twitter Card for a blog post"><em>Preview of a Twitter Card for a blog post</em></p>
+<p>Once your twitter card tags are up and running you can use <a href="https://cards-dev.twitter.com/validator">this validator</a> to check-out how it would look. The validator checks for the correct tags and gives you this message if everything went ok:</p>
+<pre><code class="language-html">INFO:  Page fetched successfully INFO:  24 metatags were found INFO:
+ twitter:card = summary tag found INFO:  Card loaded successfully
+</code></pre>
+<hr>
+<h2>Favicons</h2>
+<p>This is the icon that will appear in the user's Bookmark or Favorites in their browser.</p>
+<p>Adding your favicon to the  of your site:</p>
+<pre><code class="language-html">&#x3C;link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</code></pre>
+<p>I highly recommend using <a href="https://realfavicongenerator.net/">https://realfavicongenerator.net/</a> you only have to upload the image you want to use as favicon and the site automatically generates the meta tags and provides a zip file with all the necessary icon files of different sizes.</p>
+<p>Don't have a favicon yet? You can make your own icon with <a href="https://www.canva.com/">https://www.canva.com/</a> It's really easy, mine only took 10 minutes to design.</p>
+<p><img src="/images/Check%20your%20head%200bc2d019ba0e4a8a98ab5def8c090365/Untitled%202.png" alt="Original design made with Canva"><em>Original design made with Canva</em></p>
+<p><img src="/images/Check%20your%20head%200bc2d019ba0e4a8a98ab5def8c090365/Untitled%203.png" alt="Favicon appears to the left of your webpage title." title="TITLE"><em>Favicon appears to the left of your webpage title.</em></p>
+<hr>
+<h2>Check your </h2>
+<p>Once you have your meta tags, open graph, twitter card and favicon included in your webpage, you can verify how the links to your site will appear in search engines and social media posts. Check your URL with this site:</p>
+<p><a href="https://metatags.io/">Meta Tags - Preview, Edit and Generate</a></p>
+<p>This site will also generate all the required meta tags in case you missed any.</p>
+<p>Good luck! 🥳</p>
+<hr>
+<h3>Credits &#x26; References</h3>
+<p><a href="https://www.w3schools.com/tags/tag_meta.asp">Meta Tag</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML">The_head_metadata_in_HTML</a></p>
+<p><a href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup">Twitter Cards</a></p>
+<p><a href="https://ogp.me/">https://ogp.me/</a></p>
+<p><a href="https://metatags.io/">https://metatags.io/</a></p>
+<p><a href="https://realfavicongenerator.net/">https://realfavicongenerator.net/</a></p>
+<p><a href="https://www.canva.com/">https://www.canva.com/</a></p>]]></content:encoded>
     </item>
   
     <item>
