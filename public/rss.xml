@@ -11,7 +11,7 @@
     <item>
       <guid>http://ezecastellanos.com.ar/posts/Check your head 0bc2d019ba0e4a8a98ab5def8c090365</guid>
       <title>Check your <head></title>
-      <description>There are many steps to follow when designing and building a webpage, choosing a color scheme, determining which technologies to use, which hosting site, domain name, etc.</description>
+      <description>What are meta tags and why are they important?</description>
       <link>http://ezecastellanos.com.ar/posts/Check your head 0bc2d019ba0e4a8a98ab5def8c090365</link>
       <pubDate>Thu, 10 Jun 2021 05:35:07 GMT</pubDate>
       <content:encoded><![CDATA[<h1>Check your  🤔</h1>
@@ -80,8 +80,10 @@
 </code></pre>
 <p><img src="/images/Check%20your%20head%200bc2d019ba0e4a8a98ab5def8c090365/Untitled%201.png" alt="Preview of a Twitter Card for a blog post"><em>Preview of a Twitter Card for a blog post</em></p>
 <p>Once your twitter card tags are up and running you can use <a href="https://cards-dev.twitter.com/validator">this validator</a> to check-out how it would look. The validator checks for the correct tags and gives you this message if everything went ok:</p>
-<pre><code class="language-html">INFO:  Page fetched successfully INFO:  24 metatags were found INFO:
- twitter:card = summary tag found INFO:  Card loaded successfully
+<pre><code class="language-javascript">INFO:  Page fetched successfully
+INFO:  24 metatags were found
+INFO:  twitter:card = summary tag found
+INFO:  Card loaded successfully
 </code></pre>
 <hr>
 <h2>Favicons</h2>
