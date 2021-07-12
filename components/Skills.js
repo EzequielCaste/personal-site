@@ -27,7 +27,7 @@ export const Skills = () => {
       className="bg-gray-500 text-gray-200 text-base h-auto p-5 sm:p-14  mx-auto sm:text-xl lg:text-3xl space-y-6"
     >
       <h2 className="my-14 text-center font-bold text-4xl">Skills</h2>
-      <div className="grid grid-flow-col-dense sm:grid-flow-row grid-cols-2 sm:grid-cols-4 grid-rows-4 gap-4 lg:w-2/3 lg:mx-auto">
+      <div className="grid grid-flow-col-dense sm:grid-flow-row  sm:grid-cols-4 grid-rows-4 gap-4 lg:w-2/3 lg:mx-auto">
         <li className={styles.listItem}>
           <FontAwesomeIcon size="2x" className="" icon={faHtml5} />
           <div className={styles.listDesc}>html5</div>

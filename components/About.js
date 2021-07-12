@@ -12,7 +12,7 @@ export const About = () => {
         Hi there! My name is Ezequiel Castellanos and I'm a Front-End web
         developer and English/Spanish translator based in Salta, Argentina.
       </p> */}
-      <div className="md:w-3/4 lg:w-2/3 mx-auto md:pb-14 md:space-y-14">
+      <div className="md:w-3/4 lg:w-2/3 space-y-5 mx-auto md:pb-14 md:space-y-14">
         <p>
           I make websites, drink mate, bake homemade pizza, and also research
           and learning new technologies. When I'm not coding, I'm taking care of

@@ -12,7 +12,7 @@ export const ProjectCard = ({project}) => {
       <div className="flex flex-col sm:flex-row lg:flex-col h-full mb-10 bg-gray-700  justify-between items-center p-1 sm:p-4 rounded shadow-lg">
         <Link href={demoLink}>
           <img
-            className="rounded-md w-1/2 lg:w-full cursor-pointer"
+            className="rounded-md sm:w-1/2 w-full cursor-pointer"
             src={`/images/${image}`}
             width={350}
             height={200}
