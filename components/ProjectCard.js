@@ -8,21 +8,31 @@ export const ProjectCard = ({project}) => {
     'text-white px-3 py-2 rounded-md text-sm font-medium bg-gray-900 hover:bg-gray-800 transition-colors mr-4';
 
   return (
-    <div className="my-10">
-      <div className="h-full mb-10 bg-gray-700 flex flex-col justify-between items-center p-10 rounded shadow-lg transform hover:scale-105 transition-transform cursor-pointer">
+    <div className="sm:my-5 sm:mx-auto lg:w-1/4">
+      <div className="flex flex-col sm:flex-row lg:flex-col h-full mb-10 bg-gray-700  justify-between items-center p-1 sm:p-4 rounded shadow-lg">
         <Link href={demoLink}>
           <img
-            className="rounded-md"
+            className="rounded-md w-1/2 lg:w-full cursor-pointer"
             src={`/images/${image}`}
-            width={300}
+            width={350}
             height={200}
           />
         </Link>
-        <div className="">
+        <div className="p-4">
           <div className="font-medium text-2xl my-3">{name}</div>
+          <div className="flex flex-col">
+            <span>Tecnologies used:</span>
+            <ul className="flex justify-evenly items-center my-2">
+              {tags.map((tag) => (
+                <li className="mx-0.5 lg:mx-1.5 text-green-200 list-none">
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="text-md">{description}</div>
         </div>
-        <div className="mt-5">
+        <div className="sm:flex sm:flex-col lg:flex-row lg:justify-center lg:items-center lg:space-y-0 sm:space-y-5 my-5">
           <a className={btn} href={demoLink}>
             Demo
           </a>

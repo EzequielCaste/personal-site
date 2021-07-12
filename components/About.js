@@ -1,39 +1,38 @@
 import React from 'react';
 
 export const About = () => {
-  const box = `my-12 transform font-bold bg-gradient-to-r from-green-400 to-green-200 mx-auto p-10 text-2xl rounded-xl md:w-max`;
+  const box = `tracking-wide font-serif my-12 font-bold mx-auto text-4xl md:w-max`;
   return (
     <div
       id="about"
-      className="h-auto p-10 lg:w-3/5 mx-auto my-28 text-xl lg:text-3xl space-y-6"
+      className="bg-gray-300 text-gray-700 text-base h-auto p-5 lg:p-20 sm:p-14 mx-auto sm:text-xl lg:text-3xl space-y-6 "
     >
-      <h2 className="my-5 font-bold text-4xl">About me</h2>
-      <p>
-        Hi there! My name is Ezequiel Castellanos and I'm a Front-end web
+      <h2 className="my-14 text-center font-bold text-4xl">About me</h2>
+      {/* <p>
+        Hi there! My name is Ezequiel Castellanos and I'm a Front-End web
         developer and English/Spanish translator based in Salta, Argentina.
-      </p>
-      <p>
-        I enjoy making websites, drinking mate, baking homemade pizza, and also
-        researching and learning new technologies. When I'm not coding, I'm
-        taking care of my vegetable garden, listening to music or watching
-        tutorials on Youtube.
-      </p>
-      <p id="about">
-        I discovered programming more than 15 years ago and since then I have
-        been studying on a self-taught basis. I built my blog page with a very
-        basic knowledge of <strong>HTML</strong>, <strong>CSS</strong> and some
-        <strong> jQuery</strong>.
-      </p>
-      <p>
-        It was nothing fancy but it was an indicator of what I was passionate
-        about:
-      </p>
-
-      <div className={box}>
-        Building websites and learning new technologies.
+      </p> */}
+      <div className="md:w-3/4 lg:w-2/3 mx-auto md:pb-14 md:space-y-14">
+        <p>
+          I make websites, drink mate, bake homemade pizza, and also research
+          and learning new technologies. When I'm not coding, I'm taking care of
+          my vegetable garden, listening to music, or watching tutorials on
+          Youtube.
+        </p>
+        <p id="about">
+          I enjoy volunteering my time to help translate articles and tutorials
+          such as the{' '}
+          <a href="https://es.javascript.info/about">Javascript.info</a>{' '}
+          open-source tutorial with translations and as a maintainer of the
+          Spanish GitHub repository. I'm also part of the{' '}
+          <a href="https://www.freecodecamp.org/espanol/news/author/ezequiel_caste/">
+            freeCodeCamp translator community
+          </a>
+          , contributing with translation and review of articles.
+        </p>
       </div>
 
-      <p>
+      {/* <p>
         Years later, I decided to study Systems Engineering expecting to dive
         into programming, but it took a while (many courses) to finally get to
         do some coding. So I started to investigate programming languages such
@@ -51,9 +50,9 @@ export const About = () => {
         teacher was that we acquire <strong>problem-solving skills</strong>, I
         remember his first response to any of our questions was:
       </p>
-      <div className={box}>did you do it on paper?</div>
+      <div className={box}>did you do it on paper?</div> */}
 
-      <p>
+      {/* <p>
         Since May 2019 I have contributed to the open source JavaScript Tutorial
         (http://javascript.info) as Maintainer and Translator of the{' '}
         <a href="https://es.javascript.info/about">
@@ -71,7 +70,7 @@ export const About = () => {
       <div>
         Currently learning more in depth:
         <div className={box}>React.js, Next.js, Tailwind CSS and SASS</div>
-      </div>
+      </div> */}
     </div>
   );
 };

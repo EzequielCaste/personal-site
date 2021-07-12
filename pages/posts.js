@@ -1,13 +1,13 @@
 import MoreStories from '../components/more-stories';
 import HeroPost from '../components/hero-post';
 import Layout from '../components/layout';
-import { getAllPosts } from '../lib/api';
+import {getAllPosts} from '../lib/api';
 import Head from 'next/head';
-import { MAIN_TITLE } from '../lib/constants';
-import { generateRss } from '../lib/rss';
+import {MAIN_TITLE} from '../lib/constants';
+import {generateRss} from '../lib/rss';
 import fs from 'fs';
 
-export default function Index({ allPosts }) {
+export default function Index({allPosts}) {
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);
   return (
@@ -39,6 +39,6 @@ export async function getStaticProps() {
   fs.writeFileSync('./public/rss.xml', rss);
 
   return {
-    props: { allPosts },
+    props: {allPosts},
   };
 }

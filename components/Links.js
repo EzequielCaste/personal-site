@@ -11,7 +11,10 @@ import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 export const Links = () => {
   return (
     <>
-      <div className="my-20 text-center h-full w-10/12 lg:w-2/5 mx-auto space-y-4">
+      <div className="my-20 text-center h-full sm:w-2/4 w-10/12 lg:w-2/5 mx-auto space-y-4">
+        <h3 className="text-semibold text-lg tracking-wider text-gray-700">
+          Let's get in touch
+        </h3>
         <div className="flex justify-between py-5">
           <a
             href="https://github.com/EzequielCaste"
@@ -19,7 +22,7 @@ export const Links = () => {
             target="_blank"
           >
             <FontAwesomeIcon
-              size="5x"
+              size="3x"
               className="animate-icons"
               icon={faGithub}
             />
@@ -30,14 +33,14 @@ export const Links = () => {
             target="_blank"
           >
             <FontAwesomeIcon
-              size="5x"
+              size="3x"
               className="animate-icons"
               icon={faTwitter}
             />
           </a>
           <a href="mailto:ezequiel.caste@gmail.com">
             <FontAwesomeIcon
-              size="5x"
+              size="3x"
               className="animate-icons"
               icon={faEnvelope}
             />
@@ -49,7 +52,7 @@ export const Links = () => {
             target="_blank"
           >
             <FontAwesomeIcon
-              size="5x"
+              size="3x"
               className="animate-icons"
               icon={faCodepen}
             />
@@ -60,7 +63,7 @@ export const Links = () => {
             target="_blank"
           >
             <FontAwesomeIcon
-              size="5x"
+              size="3x"
               className="animate-icons"
               icon={faLinkedin}
             />

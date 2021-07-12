@@ -19,7 +19,7 @@ export default function Layout({preview, children}) {
       <footer className="text-center bg-gray-300 bg-accent-1 border-t border-accent-2">
         <div className="container mx-auto p-3 flex justify-between">
           <div className="">
-            &copy; 2020 Ezequiel Castellanos{' '}
+            &copy; 2021 Ezequiel Castellanos{' '}
             <a
               href="https://twitter.com/Ezequiel_Caste"
               rel="noopener noreferrer"
