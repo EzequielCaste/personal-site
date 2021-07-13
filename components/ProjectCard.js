@@ -24,7 +24,10 @@ export const ProjectCard = ({project}) => {
             <span>Tecnologies used:</span>
             <ul className="flex justify-evenly items-center my-2">
               {tags.map((tag) => (
-                <li className="mx-0.5 lg:mx-1.5 text-green-200 list-none">
+                <li
+                  key={tag}
+                  className="mx-0.5 lg:mx-1.5 text-green-200 list-none"
+                >
                   {tag}
                 </li>
               ))}
