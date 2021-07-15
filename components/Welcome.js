@@ -8,13 +8,13 @@ export const Welcome = () => {
       text-center  font-medium  
       xl:py-1 xl:my-1"
       >
-        Hi there!👋 my name is
+        Hi there!👋 I'm
       </h4>
       <h1 className="text-center text-2xl sm:text-4xl xl:text-6xl font-semibold">
         Ezequiel Castellanos
       </h1>
       <h3
-        className="text-gray-400 text-lg sm:text-2xl lg:text-4xl      
+        className="text-gray-500 text-lg sm:text-2xl lg:text-4xl      
       font-semibold  text-center mt-1  sm:w-2/4 w-3/4 mx-auto"
       >
         Front-End Web Developer

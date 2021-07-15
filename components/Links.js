@@ -21,6 +21,7 @@ export const Links = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
+            <span className="hidden">GitHub</span>
             <FontAwesomeIcon
               size="3x"
               className="animate-icons"
@@ -32,6 +33,8 @@ export const Links = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
+            {' '}
+            <span className="hidden">Twitter</span>
             <FontAwesomeIcon
               size="3x"
               className="animate-icons"
@@ -39,6 +42,7 @@ export const Links = () => {
             />
           </a>
           <a href="mailto:ezequiel.caste@gmail.com">
+            <span className="hidden">Email</span>
             <FontAwesomeIcon
               size="3x"
               className="animate-icons"
@@ -51,6 +55,7 @@ export const Links = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
+            <span className="hidden">Codepen</span>
             <FontAwesomeIcon
               size="3x"
               className="animate-icons"
@@ -62,6 +67,7 @@ export const Links = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
+            <span className="hidden">Linedin</span>
             <FontAwesomeIcon
               size="3x"
               className="animate-icons"

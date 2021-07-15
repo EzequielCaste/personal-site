@@ -25,6 +25,7 @@ export default function Layout({preview, children}) {
               rel="noopener noreferrer"
               target="_blank"
             >
+              <span className="hidden">Twitter</span>
               <FontAwesomeIcon
                 size="1x"
                 className="text-gray-200"
@@ -38,6 +39,7 @@ export default function Layout({preview, children}) {
               rel="noopener noreferrer"
               target="_blank"
             >
+              <span className="hidden">Linkedin</span>
               <FontAwesomeIcon
                 size="1x"
                 className="text-gray-200"

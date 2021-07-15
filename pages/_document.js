@@ -4,7 +4,7 @@ import {HOME_OG_IMAGE_URL} from '../lib/constants';
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
           <meta content="text/html; charset=utf-8" httpEquiv="Content-Type" />
