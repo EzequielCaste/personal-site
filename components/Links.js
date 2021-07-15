@@ -67,7 +67,7 @@ export const Links = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <span className="hidden">Linedin</span>
+            <span className="hidden">Linkedin</span>
             <FontAwesomeIcon
               size="3x"
               className="animate-icons"
