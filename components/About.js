@@ -14,10 +14,10 @@ export const About = () => {
       </p> */}
       <div className="md:w-3/4 lg:w-2/3 space-y-5 mx-auto md:pb-14 md:space-y-14">
         <p>
-          I make websites, drink mate, bake homemade pizza, and also research
-          and learning new technologies. When I'm not coding, I'm taking care of
-          my vegetable garden, listening to music, or watching tutorials on
-          Youtube.
+          I enjoy creating applications and websites that are accessible and
+          interactive. I aim to learn and improve my skills on the latest web
+          technologies and challenge myself every day to learn something new and
+          become a more effective developer.
         </p>
         <p id="about">
           I enjoy volunteering my time to help translate articles and tutorials
