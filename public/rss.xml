@@ -5,9 +5,61 @@
         <link>http://ezecastellanos.com.ar</link>
         <description>Blog page for Ezequiel</description>
         <language>en</language>
-        <lastBuildDate>Thu, 10 Jun 2021 05:35:07 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Aug 2021 05:35:07 GMT</lastBuildDate>
         <atom:link href="http://ezecastellanos.com.ar" rel="self" type="application/rss+xml"/>
         
+    <item>
+      <guid>http://ezecastellanos.com.ar/posts/Color generator cfcc0c3c605643d7b26cb87fc6cefba7</guid>
+      <title>Color Generator</title>
+      <description>Use values.js package to generate color tints and shades</description>
+      <link>http://ezecastellanos.com.ar/posts/Color generator cfcc0c3c605643d7b26cb87fc6cefba7</link>
+      <pubDate>Tue, 03 Aug 2021 05:35:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h1>Color generator</h1>
+<p>If you ever want to build a color generator app please don't try to reinvent the wheel. There are many npm packages to help and assist you and most importantly, save you a lot of time. Sometimes it can be good practice to write your own script but don't let it get too complicated.</p>
+<p>I found an interesting package called <strong><a href="https://noeldelgado.github.io/values.js/">values.js</a></strong> that provides us with tints and shades of a given color. Before I discovered this package I was going crazy converting colors from HEX to RGB and later to HSL, wasting time when I could have done a simple google search for: "npm color shades and tints"</p>
+<h2>Installation</h2>
+<pre><code class="language-bash">npm install values.js --save
+</code></pre>
+<h2>Usage</h2>
+<pre><code class="language-jsx">import Values from 'values.js';
+let color = new Values('#aaa');
+
+// Generate the tints and shades of the base color as specified by weight 10.
+console.log(color.all(10));
+</code></pre>
+<p>For my case of the Color Generator, I needed 10 tints (lighter) and 10 shades (darker). The <code>all()</code> method returns an array of color objects. Each object contains several useful properties such as weight, type, and rgbString, but for this particular case, I used the hex string to extract the HEX color code and the weight to represent the percentage of light/darkness.</p>
+<p><img src="https://i.imgur.com/mlMGZTf.png" alt="https://i.imgur.com/mlMGZTf.png"></p>
+<h2>Next Step: Copy to Clipboard</h2>
+<p>Let's add some additional functionality to this app by allowing the user to copy a color to their clipboard. Be careful 🚧 You may come across <code>document.execCommand()</code> but this method is <strong>deprecated</strong>. The alternative to use is <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API">Clipboard API</a>:</p>
+<pre><code class="language-jsx">navigator.clipboard.writeText('text to copy');
+</code></pre>
+<p>Remember to change the style of the color divs so that it shows it can be clicked on (hint: <code>cursor: pointer</code>).</p>
+<p>Now the tricky part is showing a message to the user that the color code has been copied to their clipboard. This message should only appear for a couple of seconds, and it will have to disappear. Here I used the setTimeout method that will hide the message after 2 seconds:</p>
+<pre><code class="language-jsx">const showMessage = (id: string) => {
+  // show message
+  document.getElementById(id).setAttribute('style', 'display: block');
+  navigator.clipboard.writeText(`#${id}`);
+  // wait 1 sec
+  // hide message
+  setTimeout(() => {
+    document.getElementById(id).setAttribute('style', 'display: none');
+  }, 2000);
+};
+</code></pre>
+<p>The <code>id</code> parameter is the HEX Color String and is included in each of the color divs:</p>
+<pre><code class="language-html">&#x3C;p id="{color.hex}" className="color-box-copy">COPIED TO CLIPBOARD&#x3C;/p>
+</code></pre>
+<hr>
+<h3>Live Color Generator: <a href="https://color-generator-drab.vercel.app/">https://color-generator-drab.vercel.app/</a></h3>
+<h3>Find the code on GitHub: <a href="https://github.com/EzequielCaste/react-projects/tree/main/color-generator">https://github.com/EzequielCaste/react-projects/tree/main/color-generator</a></h3>
+<p><img src="https://i.imgur.com/4ziuHGk.png" alt="https://i.imgur.com/4ziuHGk.png"></p>
+<p>Good luck! 🥳</p>
+<hr>
+<h3>Credits &#x26; References</h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API">https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API</a></p>
+<p><a href="https://noeldelgado.github.io/values.js/">https://noeldelgado.github.io/values.js/</a></p>]]></content:encoded>
+    </item>
+  
     <item>
       <guid>http://ezecastellanos.com.ar/posts/Check your head 0bc2d019ba0e4a8a98ab5def8c090365</guid>
       <title>Check your <head></title>
