@@ -2,11 +2,11 @@ import PostPreview from '../components/post-preview';
 
 export default function MoreStories({posts}) {
   return (
-    <section className="mx-auto w-3/4 mt-5 p-4 border">
-      <h2 className="mb-8 text-2xl md:text-4xl font-bold tracking-tighter leading-tight">
-        More Stories
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 ">
+    <section className="mx-auto w-5/6 mt-5 lg:w-3/6 max-w-screen-md">
+      <header className="capitalize font-bold text-5xl lg:text-6xl tracking-wider mb-9 md:my-16">
+        <h2>my articles</h2>
+      </header>
+      <div className="flex flex-col space-y-10 mb-20 ">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}

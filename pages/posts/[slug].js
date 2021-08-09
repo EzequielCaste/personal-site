@@ -14,7 +14,7 @@ const renderers = {
   },
 };
 
-export default function Post({post, morePosts, preview}) {
+export default function Post({post, preview}) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -22,7 +22,7 @@ export default function Post({post, morePosts, preview}) {
   return (
     <Layout preview={preview}>
       <>
-        <article className="prose md:prose-2xl md:w-11/12 lg:prose-3xl p-6 mx-auto my-10 lg:my-24 text-gray-700">
+        <article className="prose w-10/12 md:w-11/12 lg:prose-3xl mx-auto my-10  text-gray-700">
           <Head>
             <title>
               {post.title} | {BLOG_SUBTITLE}
@@ -66,7 +66,6 @@ export async function getStaticProps({params}) {
     'excerpt',
     'coverImage',
   ]);
-  const content = await markdownToHtml(post.content || '');
 
   return {
     props: {

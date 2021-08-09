@@ -88,3 +88,10 @@ img + em {
     transform: translate(-50%, -160%);
   }
 }
+.prose {
+  line-height: 1.4;
+}
+.prose pre code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+}

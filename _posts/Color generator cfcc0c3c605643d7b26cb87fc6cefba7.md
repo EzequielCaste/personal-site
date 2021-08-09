@@ -71,7 +71,7 @@ The `id` parameter is the HEX Color String and is included in each of the color 
 
 ### Live Color Generator: [https://color-generator-drab.vercel.app/](https://color-generator-drab.vercel.app/)
 
-### Find the code on GitHub: [https://github.com/EzequielCaste/react-projects/tree/main/color-generator](https://github.com/EzequielCaste/react-projects/tree/main/color-generator)
+### Find the code on GitHub: [color-generator](https://github.com/EzequielCaste/react-projects/tree/main/color-generator)
 
 ![https://i.imgur.com/4ziuHGk.png](https://i.imgur.com/4ziuHGk.png)
 
