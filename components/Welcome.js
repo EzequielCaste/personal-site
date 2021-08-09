@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Welcome = () => {
   return (
-    <div className="py-5 lg:py-0 my-28 text-gray-700">
+    <div className="py-5 lg:py-0 text-gray-700">
       <h4
         className="text-base sm:text-xl xl:text-2xl      
       text-center  font-medium  
