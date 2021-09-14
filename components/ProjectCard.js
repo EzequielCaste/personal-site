@@ -8,7 +8,7 @@ export const ProjectCard = ({project}) => {
     'text-white px-3 py-2 rounded-md text-sm font-medium bg-gray-900 hover:bg-gray-800 transition-colors mr-4';
 
   return (
-    <div className="sm:my-5 sm:mx-auto lg:w-1/4">
+    <div className="sm:my-5 sm:mx-auto md:w-auto md:mx-1 lg:max-w-xs">
       <div className="flex flex-col sm:flex-row lg:flex-col h-full mb-10 bg-gray-700  justify-between items-center p-1 sm:p-4 rounded shadow-lg">
         <Link href={demoLink}>
           <img
