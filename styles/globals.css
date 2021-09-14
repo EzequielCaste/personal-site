@@ -95,8 +95,3 @@ img + em {
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.8rem;
 }
-.links-container {
-  height: 0;
-  overflow: hidden;
-  transition: all 0.3s linear;
-}

@@ -8,16 +8,20 @@ export const About = () => {
       className="bg-gray-300 text-gray-700 text-base h-auto p-5 lg:p-20 sm:p-14 mx-auto sm:text-xl lg:text-3xl space-y-6 "
     >
       <h2 className="my-14 text-center font-bold text-4xl">About me</h2>
-      {/* <p>
-        Hi there! My name is Ezequiel Castellanos and I'm a Front-End web
-        developer and English/Spanish translator based in Salta, Argentina.
-      </p> */}
+
       <div className="md:w-3/4 lg:w-2/3 space-y-5 mx-auto md:pb-14 md:space-y-14">
         <p>
-          I enjoy creating applications and websites that are accessible and
-          interactive. I aim to learn and improve my skills on the latest web
-          technologies and challenge myself every day to learn something new and
-          become a more effective developer.
+          I specialize in <strong>JavaScript</strong> and have experience working with <strong>React JS</strong>.
+        </p>
+
+        <p>
+          I've worked with backend technologies too, such as <strong>Nodejs, Express</strong>,
+          and the databases MongoDB and PostgreSQL.
+        </p>
+        <p>
+          I am a team player, motivated to learn, and an open-minded person. I'm
+          always looking for new challenges and learning new things to improve
+          my knowledge and give the best of myself in a job.
         </p>
         <p id="about">
           I enjoy volunteering my time to help translate articles and tutorials

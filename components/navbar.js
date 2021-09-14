@@ -1,11 +1,9 @@
-import {useState, useRef, useEffect} from 'react';
+import {useState} from 'react';
 import Link from 'next/link';
 import {links} from '../lib/links-data';
 
 export const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
-  const linksContainerRef = useRef(null);
-  const linksRef = useRef(null);
 
   const desktopLinks =
     'text-white px-3 py-2 hover:bg-gray-900 rounded-md text-sm font-medium capitalize ';
@@ -14,17 +12,10 @@ export const Navbar = () => {
     'block text-gray-100 px-3 py-2 rounded-md text-base font-medium hover:bg-gray-900 hover:text-white capitalize';
   const resumeLink = `${mobileLinks} bg-gray-300 text-gray-700`;
 
-  useEffect(() => {
-    const linksHeight = linksRef.current.getBoundingClientRect().height;
-    if (menuToggle) {
-      linksContainerRef.current.style.height = `${linksHeight}px`;
-    } else {
-      linksContainerRef.current.style.height = '0px';
-    }
-  }, [menuToggle]);
+
   return (
     <nav className="fixed bg-gray-700 w-full shadow-lg z-10">
-      <div className="container mx-auto px-2">
+      <div className={`container ${menuToggle ? 'h-screen' : '' } mx-auto px-2`}>
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
@@ -83,11 +74,10 @@ export const Navbar = () => {
           </div>
         </div>
         <div
-          className="links-container"
-          ref={linksContainerRef}
+          className={`${menuToggle ? '' : 'hidden'} `}          
           id="mobile-menu"
         >
-          <div ref={linksRef} className="px-2 pt-2 pb-3 space-y-2">
+          <div className="flex flex-col justify-evenly px-2 pt-2 pb-3 space-y-2 h-full">
             {links.map((link) => {
               const {id, url, text} = link;
               return (
