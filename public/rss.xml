@@ -9,10 +9,10 @@
         <atom:link href="http://ezecastellanos.com.ar" rel="self" type="application/rss+xml"/>
         
     <item>
-      <guid>http://ezecastellanos.com.ar/posts/Color generator cfcc0c3c605643d7b26cb87fc6cefba7</guid>
+      <guid>http://ezecastellanos.com.ar/posts/Color generator</guid>
       <title>Color Generator</title>
       <description>Use values.js package to generate color tints and shades</description>
-      <link>http://ezecastellanos.com.ar/posts/Color generator cfcc0c3c605643d7b26cb87fc6cefba7</link>
+      <link>http://ezecastellanos.com.ar/posts/Color generator</link>
       <pubDate>Tue, 03 Aug 2021 05:35:07 GMT</pubDate>
       <content:encoded><![CDATA[<h1>Color generator</h1>
 <p>If you ever want to build a color generator app please don't try to reinvent the wheel. There are many npm packages to help and assist you and most importantly, save you a lot of time. Sometimes it can be good practice to write your own script but don't let it get too complicated.</p>
@@ -64,10 +64,10 @@ console.log(color.all(10));
     </item>
   
     <item>
-      <guid>http://ezecastellanos.com.ar/posts/Check your head 0bc2d019ba0e4a8a98ab5def8c090365</guid>
+      <guid>http://ezecastellanos.com.ar/posts/Check your head</guid>
       <title>Check your <head></title>
       <description>What are meta tags and why are they important?</description>
-      <link>http://ezecastellanos.com.ar/posts/Check your head 0bc2d019ba0e4a8a98ab5def8c090365</link>
+      <link>http://ezecastellanos.com.ar/posts/Check your head</link>
       <pubDate>Thu, 10 Jun 2021 05:35:07 GMT</pubDate>
       <content:encoded><![CDATA[<h1>Check your  🤔</h1>
 <p>There are many steps to follow when designing and building a webpage, choosing a color scheme, determining which technologies to use, which hosting site, domain name, etc. That is why it is important to plan <em>before</em> you start writing any line of code. But sometimes we're in a hurry, we want to build a quick webpage and get it uploaded fast. This is where <strong>mistakes</strong> are made. Like the saying goes:</p>

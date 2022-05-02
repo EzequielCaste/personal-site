@@ -83,9 +83,9 @@ img + em {
 }
 @media all and (min-width: 700px) {
   img + em {
-    position: absolute;
+    /* position: absolute;
     left: 50%;
-    transform: translate(-50%, -160%);
+    transform: translate(-50%, -160%); */
   }
 }
 .prose {
