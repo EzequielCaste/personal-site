@@ -16,7 +16,7 @@ export const SocialShare = ({post}) => {
         </TwitterShareButton>
       </div>
       <Link as={`/posts/`} href="/posts">
-        <a className="text-md">Back</a>
+        <span className="text-md">Back</span>
       </Link>
     </>
   );

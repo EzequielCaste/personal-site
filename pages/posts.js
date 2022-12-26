@@ -12,7 +12,7 @@ export default function Index({allPosts}) {
     <>
       <Layout>
         <Head>
-          <title>Blog | {MAIN_TITLE}</title>
+          <title>{`Blog | ${MAIN_TITLE}`}</title>
         </Head>
 
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}

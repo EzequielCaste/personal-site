@@ -8,7 +8,7 @@ export default function HeroPost({title, date, excerpt, slug}) {
         <div>
           <h3 className="mt-14 sm:mt-28 text-4xl text-gray-900 font-bold lg:text-6xl leading-tight md:text-6xl ">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
-              <a className="hover:text-gray-600">{title}</a>
+              <span className="hover:text-gray-600">{title}</span>
             </Link>
           </h3>
           <div className="mb-4 md:mb-0 text-base md:text-lg text-gray-500 md:my-2">
@@ -21,9 +21,9 @@ export default function HeroPost({title, date, excerpt, slug}) {
           </p>
         </div>
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a className="md:my-3.5 inline-block cursor-pointer py-2 px-4 border border-transparent shadow-sm text-md font-medium rounded-md text-white bg-gray-900 hover:bg-gray-700 focus:outline-none">
+          <span className="md:my-3.5 inline-block cursor-pointer py-2 px-4 border border-transparent shadow-sm text-md font-medium rounded-md text-white bg-gray-900 hover:bg-gray-700 focus:outline-none">
             Read more
-          </a>
+          </span>
         </Link>
       </div>
     </section>
