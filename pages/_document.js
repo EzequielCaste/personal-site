@@ -77,7 +77,7 @@ class MyDocument extends Document {
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         </Head>
-        <body>
+        <body className='styled-scrollbars'>
           <Main />
           <NextScript />
         </body>

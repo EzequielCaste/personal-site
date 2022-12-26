@@ -26,6 +26,21 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.styled-scrollbars {
+  /* Foreground, Background */
+  scrollbar-color: #999 #333;
+}
+.styled-scrollbars::-webkit-scrollbar {
+  width: 10px; /* Mostly for vertical scrollbars */
+  height: 10px; /* Mostly for horizontal scrollbars */
+}
+.styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
+  background: rgba(55, 65, 81);
+}
+.styled-scrollbars::-webkit-scrollbar-track { /* Background */
+  background: rgb(209 213 219);
+}
 .far,
 .fab,
 .animate-icons {
