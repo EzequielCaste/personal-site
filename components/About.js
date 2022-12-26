@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="bg-gray-300 text-gray-700 text-base h-auto p-5 lg:p-20 sm:p-14 mx-auto sm:text-xl lg:text-3xl space-y-6 "
+      className="bg-gray-200 text-gray-700 text-base h-auto p-5 lg:p-20 sm:p-14 mx-auto sm:text-xl lg:text-3xl space-y-6 "
     >
       <h2 className="my-14 text-center font-bold text-4xl">About me</h2>
 

@@ -10,6 +10,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
+  background-color: rgb(209 213 219);
 }
 #__next {
   min-height: 100vh;
@@ -29,7 +30,7 @@ a {
 
 .styled-scrollbars {
   /* Foreground, Background */
-  scrollbar-color: #999 #333;
+  scrollbar-color: rgba(55, 65, 81) rgb(209 213 219);
 }
 .styled-scrollbars::-webkit-scrollbar {
   width: 10px; /* Mostly for vertical scrollbars */
