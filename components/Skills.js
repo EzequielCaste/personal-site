@@ -1,19 +1,17 @@
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import {
-  faCodepen,
   faCss3Alt,
   faGit,
   faGithub,
   faHtml5,
   faJsSquare,
-  faLinkedin,
   faNodeJs,
   faNpm,
   faReact,
   faSass,
-  faTwitter,
   faWindows,
+  faUbuntu
 } from '@fortawesome/free-brands-svg-icons';
 
 export const Skills = () => {
@@ -28,18 +26,7 @@ export const Skills = () => {
     >
       <h2 className="my-14 text-center font-bold text-4xl">Skills</h2>
       <ul className="grid grid-flow-col-dense sm:grid-flow-row sm:grid-cols-4 grid-rows-4 gap-4 lg:w-2/3 lg:mx-auto">
-        <li className={styles.listItem}>
-          <FontAwesomeIcon size="2x" className="" icon={faHtml5} />
-          <div className={styles.listDesc}>html5</div>
-        </li>
-        <li className={styles.listItem}>
-          <FontAwesomeIcon size="2x" className="" icon={faCss3Alt} />
-          <div className={styles.listDesc}>css3</div>
-        </li>
-        <li className={styles.listItem}>
-          <FontAwesomeIcon size="2x" className="" icon={faSass} />
-          <div className={styles.listDesc}>sass</div>
-        </li>
+
         <li className={styles.listItem}>
           <FontAwesomeIcon size="2x" className="" icon={faReact} />
           <div className={styles.listDesc}>react</div>
@@ -51,6 +38,34 @@ export const Skills = () => {
         <li className={styles.listItem}>
           <FontAwesomeIcon size="2x" className="" icon={faJsSquare} />
           <div className={styles.listDesc}>javascript</div>
+        </li>
+        <li className={styles.listItem}>
+          <i className="svg-inline--fa fa-square-js fa-2x  devicon-graphql-plain"></i>
+          <div className={styles.listDesc}>graphql</div>
+        </li>
+        <li className={styles.listItem}>
+          <i className="svg-inline--fa fa-square-js fa-2x devicon-jest-plain"></i>
+          <div className={styles.listDesc}>jest</div>
+        </li>
+        <li className={styles.listItem}>
+          <i className="svg-inline--fa fa-square-js fa-2x devicon-materialui-plain"></i>
+          <div className={styles.listDesc}>material ui</div>
+        </li>
+        <li className={styles.listItem}>
+          <i className="svg-inline--fa fa-square-js fa-2x devicon-mongodb-plain"></i>
+          <div className={styles.listDesc}>mongodb</div>
+        </li>
+        <li className={styles.listItem}>
+          <FontAwesomeIcon size="2x" className="" icon={faHtml5} />
+          <div className={styles.listDesc}>html5</div>
+        </li>
+        <li className={styles.listItem}>
+          <FontAwesomeIcon size="2x" className="" icon={faCss3Alt} />
+          <div className={styles.listDesc}>css3</div>
+        </li>
+        <li className={styles.listItem}>
+          <FontAwesomeIcon size="2x" className="" icon={faSass} />
+          <div className={styles.listDesc}>sass</div>
         </li>
         <li className={styles.listItem}>
           <FontAwesomeIcon size="2x" className="" icon={faNpm} />
@@ -67,6 +82,10 @@ export const Skills = () => {
         <li className={styles.listItem}>
           <FontAwesomeIcon size="2x" className="" icon={faWindows} />
           <div className={styles.listDesc}>windows</div>
+        </li>
+        <li className={styles.listItem}>
+          <FontAwesomeIcon size="2x" className="" icon={faUbuntu} />
+          <div className={styles.listDesc}>Ubuntu</div>
         </li>
       </ul>
     </div>

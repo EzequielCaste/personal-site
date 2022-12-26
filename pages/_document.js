@@ -26,7 +26,7 @@ class MyDocument extends Document {
             href="/apple-touch-icon.png"
           />
           <meta name="author" content="Ezequiel Castellanos" />
-          <meta name="Description" CONTENT="Personal Website and Blog" />
+          <meta name="Description" content="Personal Website and Blog" />
           <meta
             name="keywords"
             content="ezequiel, castellanos, ezequiel castellanos, portfolio, front-end, frontend, full stack, web, remote, developer, blog, translator, translations, web development"

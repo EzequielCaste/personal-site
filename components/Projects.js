@@ -8,7 +8,7 @@ export const Projects = () => {
       <h2 className="lg:my-24 my-16 font-bold text-4xl lg:text-5xl text-center text-gray-700">
         Some of my projects
       </h2>
-      <div className="flex flex-col lg:flex-row justify-center">
+      <div className="flex flex-col justify-center items-center">
         {projects.map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}

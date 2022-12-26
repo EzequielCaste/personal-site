@@ -11,18 +11,11 @@ export const About = () => {
 
       <div className="md:w-3/4 lg:w-2/3 space-y-5 mx-auto md:pb-14 md:space-y-14">
         <p>
-          I specialize in <strong>JavaScript</strong> and have experience working with <strong>React JS</strong>.
+         I'm a self-taught front-end developer specializing in <strong>JavaScript</strong>. I have experience working with <strong>React</strong> and backend technologies, such as Node.js, Express, MongoDB, and GraphQL.
+
+          I like helping new developers achieve their goals, I also contribute to online open-source communities with translations, fixes, and reviews of technical articles.
         </p>
 
-        <p>
-          I've worked with backend technologies too, such as <strong>Nodejs, Express</strong>,
-          and the databases MongoDB and PostgreSQL.
-        </p>
-        <p>
-          I am a team player, motivated to learn, and an open-minded person. I'm
-          always looking for new challenges and learning new things to improve
-          my knowledge and give the best of myself in a job.
-        </p>
         <p id="about">
           I enjoy volunteering my time to help translate articles and tutorials
           such as the{' '}

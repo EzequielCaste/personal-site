@@ -1,29 +1,26 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExternalLink } from '@fortawesome/free-solid-svg-icons'
 
-export const ProjectCard = ({project}) => {
-  const {name, image, tags, description, codeLink, demoLink} = project;
+export const ProjectCard = ({ project }) => {
+  const { name, image, tags, description, codeLink, demoLink } = project;
   const btn =
     'text-white px-3 py-2 rounded-md text-sm font-medium bg-gray-900 hover:bg-gray-800 transition-colors mr-4';
 
   return (
-    <div className="sm:my-5 sm:mx-auto md:w-auto md:mx-1 lg:max-w-xs">
-      <div className="flex flex-col sm:flex-row lg:flex-col h-full mb-10 bg-gray-700  justify-between items-center p-1 sm:p-4 rounded shadow-lg">
-        <Link href={demoLink}>
-          <img
-            alt={`Thumbnail for ${name}`}
-            className="rounded-md md:w-1/2 lg:w-full cursor-pointer"
-            src={`/images/${image}`}
-            width={350}
-            height={200}
-          />
-        </Link>
-        <div className="p-4">
-          <div className="font-medium text-2xl my-3">{name}</div>
+    <div className="py-6">
+      <div className="flex flex-col sm:flex-row max-w-sm md:max-w-3xl xl:max-w-5xl bg-gray-700 shadow-lg rounded-lg overflow-hidden">
+        <div className="w-full h-48 md:h-auto sm:w-1/3 bg-cover" style={{ backgroundImage: `url(/images/${image})` }}>
+        </div>
+        <div className="w-full sm:w-2/3 p-4 md:p-8">          
+            <span className="font-medium text-2xl my-3 mr-5">{name}</span>
+            <Link href={demoLink}>
+              <FontAwesomeIcon className='text-gray-400 hover:text-gray-200' icon={faExternalLink} />
+            </Link>
           <div className="flex flex-col">
             <span>Tecnologies used:</span>
-            <ul className="flex justify-evenly items-center my-2">
+            <ul className="flex flex-wrap justify-evenly items-center my-2">
               {tags.map((tag) => (
                 <li
                   key={tag}
@@ -34,17 +31,19 @@ export const ProjectCard = ({project}) => {
               ))}
             </ul>
           </div>
-          <div className="text-md">{description}</div>
-        </div>
-        <div className="sm:flex sm:flex-col lg:flex-row lg:justify-center lg:items-center lg:space-y-0 sm:space-y-5 my-5">
-          <a className={btn} href={demoLink}>
-            Demo
-          </a>
-          <a className={btn} href={codeLink}>
-            Code
-          </a>
+          <p className="mt-2 text-md">{description}</p>
+
+          <div className="flex item-center justify-center mt-3">
+
+            <a className={btn} href={demoLink}>
+              Demo
+            </a>
+            <a className={btn} href={codeLink}>
+              Code
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  );
+  ) 
 };

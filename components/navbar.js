@@ -64,8 +64,8 @@ export const Navbar = () => {
                 {links.map((link) => {
                   const {id, url, text} = link;
                   return (
-                    <Link key={id} href={url}>
-                      <a className={desktopLinks}>{text}</a>
+                    <Link className={desktopLinks} key={id} href={url}>
+                      {text}
                     </Link>
                   );
                 })}
@@ -81,13 +81,9 @@ export const Navbar = () => {
             {links.map((link) => {
               const {id, url, text} = link;
               return (
-                <Link key={id} href={url}>
-                  <a
-                    onClick={() => setMenuToggle(!menuToggle)}
-                    className={text === 'resume' ? resumeLink : mobileLinks}
-                  >
-                    {text}
-                  </a>
+                <Link onClick={() => setMenuToggle(!menuToggle)}
+                    className={text === 'resume' ? resumeLink : mobileLinks} key={id} href={url}>                 
+                    {text}                
                 </Link>
               );
             })}

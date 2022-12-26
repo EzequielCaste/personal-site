@@ -10,6 +10,8 @@ export default function Layout({preview, children}) {
       <Head>
         <title>{MAIN_TITLE}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+          
       </Head>
       <Navbar />
       <div className="text-gray-900 mx-auto w-full lg:py-0 mt-20">
@@ -19,7 +21,7 @@ export default function Layout({preview, children}) {
       <footer className="text-center text-gray-200 bg-gray-700 bg-accent-1 border-t border-accent-2">
         <div className="container mx-auto p-3 flex justify-between">
           <div className="">
-            &copy; 2021 Ezequiel Castellanos{' '}
+            &copy; 2022 Ezequiel Castellanos{' '}
             <a
               href="https://twitter.com/Ezequiel_Caste"
               rel="noopener noreferrer"
