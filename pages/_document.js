@@ -74,6 +74,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           ></link>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         </Head>
         <body>
