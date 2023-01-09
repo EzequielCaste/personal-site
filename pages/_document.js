@@ -26,7 +26,7 @@ class MyDocument extends Document {
             href="/apple-touch-icon.png"
           />
           <meta name="author" content="Ezequiel Castellanos" />
-          <meta name="Description" content="Personal Website and Blog" />
+          <meta name="description" content="I'm a Frontend Developer who specializes in JavaScript. I have experience developing web applications with React and Node.js. I also have experience with Unit Testing and, E2E Testing with Cypress." />
           <meta
             name="keywords"
             content="ezequiel, castellanos, ezequiel castellanos, portfolio, front-end, frontend, full stack, web, remote, developer, blog, translator, translations, web development"
@@ -40,8 +40,8 @@ class MyDocument extends Document {
           />
           <meta property="og:image" content={HOME_OG_IMAGE_URL} />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://ezecastellanos.com.ar" />
-
+          <meta property="og:url" content="https://ezecastellanos.com.ar/" />
+          <meta property="og:description" content="I'm a Frontend Developer who specializes in JavaScript. I have experience developing web applications with React and Node.js. I also have experience with Unit Testing and, E2E Testing with Cypress." />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@Ezequiel_Caste" />
           <meta name="twitter:creator" content="@Ezequiel_Caste" />
