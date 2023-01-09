@@ -8,6 +8,7 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta content="text/html; charset=utf-8" httpEquiv="Content-Type" />
+          <meta name="google-site-verification" content="0JzJgTcu_xAGmKyIC7HRFBWi7IWx0ZEzkc-bzfR6UfM" />
           <link
             rel="icon"
             type="image/png"
