@@ -46,6 +46,7 @@ class MyDocument extends Document {
           <meta name="twitter:site" content="@Ezequiel_Caste" />
           <meta name="twitter:creator" content="@Ezequiel_Caste" />
           <meta name="twitter:title" content="Ezequiel Castellanos" />
+          <meta name="twitter:summary" content="I'm a Frontend Developer who specializes in JavaScript. I have experience developing web applications with React and Node.js. I also have experience with Unit Testing and, E2E Testing with Cypress." />
           <meta name="twitter:url" content="https://ezecastellanos.com.ar" />
           <meta name="twitter:image" content={HOME_OG_IMAGE_URL} />
 
