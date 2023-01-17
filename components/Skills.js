@@ -14,7 +14,7 @@ export const Skills = () => {
       className="bg-gray-600 text-gray-200 text-base h-auto p-5 sm:p-14 mx-auto pb-14 sm:text-xl lg:text-3xl space-y-6"
     >
       <h2 className="my-14 text-center font-bold text-4xl">Skills</h2>
-      <ul className="flex flex-wrap justify-evenly p-4 items-center gap-4 md:grid md:grid-cols-3 md:gap-5 lg:max-w-4xl lg:mx-auto">
+      <ul className="grid grid-cols-3 p-4 items-center gap-4 md:gap-5 md:max-w-4xl md:mx-auto">
         {
           skills.map(item => (
             <li key={item.name} className={styles.listItem}>
