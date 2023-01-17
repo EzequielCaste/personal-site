@@ -1,12 +1,12 @@
 import {useRouter} from 'next/router';
 import ErrorPage from 'next/error';
-import Layout from '../../components/layout';
-import {getPostBySlug, getAllPosts} from '@/lib/api';
+import Layout from '@components/layout';
+import {getPostBySlug, getAllPosts} from '@lib/api';
 import Head from 'next/head';
-import {BLOG_SUBTITLE, HOME_OG_IMAGE_URL} from '../../lib/constants';
-import markdownToHtml from '../../lib/markdownToHtml';
+import {BLOG_SUBTITLE, HOME_OG_IMAGE_URL} from '@lib/constants';
+import markdownToHtml from '@lib/markdownToHtml';
 import ReactMarkdown from 'react-markdown';
-import {SocialShare} from '../../components/social-share';
+import {SocialShare} from '@components/social-share';
 
 const renderers = {
   image: (image) => {
