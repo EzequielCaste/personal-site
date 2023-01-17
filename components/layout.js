@@ -16,7 +16,7 @@ export default function Layout({preview, children}) {
         <main>{children}</main>
       </div>
 
-      <footer className="text-center text-gray-200 bg-gray-700 bg-accent-1 border-t border-accent-2">
+      <footer className="animate-icons text-center text-gray-200 bg-gray-700 bg-accent-1 border-t border-accent-2">
         <div className="container mx-auto p-3 flex justify-between">
           <div className="">
             &copy; 2022 Ezequiel Castellanos{' '}
@@ -28,7 +28,7 @@ export default function Layout({preview, children}) {
               <span className="hidden">Twitter</span>
               <FontAwesomeIcon
                 size="1x"
-                className="text-gray-200"
+                className="text-gray-200  animate-icons"
                 icon={faTwitterSquare}
               />
 
@@ -42,7 +42,7 @@ export default function Layout({preview, children}) {
               <span className="hidden">Linkedin</span>
               <FontAwesomeIcon
                 size="1x"
-                className="text-gray-200"
+                className="text-gray-200  animate-icons"
                 icon={faLinkedin}
               />
             </a>

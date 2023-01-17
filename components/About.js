@@ -7,11 +7,10 @@ export const About = () => {
       id="about"
       className="bg-gray-200 text-gray-700 text-base h-auto p-5 lg:p-20 sm:p-14 mx-auto sm:text-xl lg:text-3xl space-y-6 "
     >
-      <h2 className="my-14 text-center font-bold text-4xl">About me</h2>
-
-      <div className="md:w-3/4 lg:w-2/3 space-y-5 mx-auto md:pb-14 md:space-y-14">
+      <div className="md:w-3/4 lg:w-2/3 space-y-5 mx-auto md:pb-14 md:space-y-14 lg:max-w-7xl">
+        <h2 className="my-14 text-center font-bold text-4xl">About me</h2>
         <p>
-         I'm a self-taught front-end developer specializing in <strong>JavaScript</strong>. I have experience working with <strong>React</strong> and backend technologies, such as Node.js, Express, MongoDB, and GraphQL.
+          I'm a self-taught front end developer specializing in <strong>JavaScript</strong>. I have experience working with <strong>React</strong> and backend technologies, such as Node.js, Express, MongoDB, and GraphQL.
 
           I like helping new developers achieve their goals, I also contribute to online open-source communities with translations, fixes, and reviews of technical articles.
         </p>
@@ -28,46 +27,6 @@ export const About = () => {
           , contributing with translation and review of articles.
         </p>
       </div>
-
-      {/* <p>
-        Years later, I decided to study Systems Engineering expecting to dive
-        into programming, but it took a while (many courses) to finally get to
-        do some coding. So I started to investigate programming languages such
-        as Visual Basic 6, C and later JavaScript.
-      </p>
-      <p>I was young and eager to learn how to make computers do stuff.</p>
-      <p>
-        Later in college we learned how to code in C, this is when I started to
-        learn new skills,{' '}
-        <strong>
-          Pseudocode, Array data structure, Multi-dimensional arrays and
-          Algorithms
-        </strong>{' '}
-        were some of the fundamental topics we learned. The main focus of our
-        teacher was that we acquire <strong>problem-solving skills</strong>, I
-        remember his first response to any of our questions was:
-      </p>
-      <div className={box}>did you do it on paper?</div> */}
-
-      {/* <p>
-        Since May 2019 I have contributed to the open source JavaScript Tutorial
-        (http://javascript.info) as Maintainer and Translator of the{' '}
-        <a href="https://es.javascript.info/about">
-          JavaScript Spanish tutorial
-        </a>
-        , translating various articles of the tutorial, reviewing translations,
-        coordinating the effort of a team of translators. Keeping the Discord
-        server active. I'm also contributing to the{' '}
-        <a href="https://www.freecodecamp.org/espanol/news/author/ezequiel_caste/">
-          {' '}
-          freeCodeCamp{' '}
-        </a>
-        community translating articles.
-      </p>
-      <div>
-        Currently learning more in depth:
-        <div className={box}>React.js, Next.js, Tailwind CSS and SASS</div>
-      </div> */}
     </div>
   );
 };

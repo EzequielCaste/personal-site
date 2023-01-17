@@ -4,7 +4,7 @@ import {HOME_OG_IMAGE_URL} from '../lib/constants';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang="en" prefix="og: https://ogp.me/ns#">
         <Head>
           <meta charSet="utf-8" />
           <meta content="text/html; charset=utf-8" httpEquiv="Content-Type" />
@@ -43,7 +43,7 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://ezecastellanos.com.ar/" />
           <meta property="og:description" content="I'm a Frontend Developer who specializes in JavaScript. I have experience developing web applications with React and Node.js. I also have experience with Unit Testing and, E2E Testing with Cypress." />
-          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:card" content="summary"></meta>
           <meta name="twitter:site" content="@Ezequiel_Caste" />
           <meta name="twitter:creator" content="@Ezequiel_Caste" />
           <meta name="twitter:title" content="Ezequiel Castellanos" />
