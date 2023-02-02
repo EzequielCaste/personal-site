@@ -14,7 +14,7 @@ export const Welcome = () => {
         Ezequiel Castellanos
       </h1>
       <h3
-        className="text-gray-500 text-lg sm:text-2xl lg:text-4xl      
+        className="text-gray-700 text-lg sm:text-2xl lg:text-4xl      
       font-semibold  text-center mt-1  sm:w-2/4 w-3/4 mx-auto"
       >
         Front End Web Developer
