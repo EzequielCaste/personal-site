@@ -9,10 +9,7 @@ export const Welcome = () => {
       <h1 className="text-2xl sm:text-4xl font-semibold my-2">
         Ezequiel Castellanos
       </h1>
-      <h2
-        className="text-gray-700 text-xl sm:text-2xl   
-      font-semibold  mt-1  sm:w-2/4 w-3/4 mx-auto"
-      >
+      <h2 className="text-gray-700 text-xl sm:text-2xl font-semibold mt-4 sm:w-2/4 w-3/4 mx-auto">
         Front End Web Developer
       </h2>
     </div>

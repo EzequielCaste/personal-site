@@ -17,9 +17,12 @@ export const Projects = () => {
           <ProjectCard key={project.name} project={project} />
         ))}
       </div>
-      {/* <Link className='mb-5 text-gray-700 hover:text-gray-500 font-semibold' href="/projects">
+      <Link
+        className="mb-5 text-gray-700 hover:text-gray-500 font-semibold"
+        href="/projects"
+      >
         View more projects
-      </Link> */}
+      </Link>
     </div>
   )
 }
