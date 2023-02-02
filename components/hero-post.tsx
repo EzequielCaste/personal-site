@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import DateFormatter from '../components/date-formatter';
+import Link from 'next/link'
+import DateFormatter from './date-formatter'
 
 export default function HeroPost({title, date, excerpt, slug}) {
   return (
@@ -27,5 +27,5 @@ export default function HeroPost({title, date, excerpt, slug}) {
         </Link>
       </div>
     </section>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export const Welcome = () => {
   return (
@@ -18,7 +18,7 @@ export const Welcome = () => {
       font-semibold  text-center mt-1  sm:w-2/4 w-3/4 mx-auto"
       >
         Front End Web Developer
-      </h3>      
+      </h3>
     </div>
-  );
-};
+  )
+}

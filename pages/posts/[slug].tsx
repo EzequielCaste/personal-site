@@ -1,26 +1,25 @@
-import {useRouter} from 'next/router';
-import ErrorPage from 'next/error';
-import Layout from '@components/layout';
-import {getPostBySlug, getAllPosts} from '@lib/api';
-import Head from 'next/head';
-import {BLOG_SUBTITLE, HOME_OG_IMAGE_URL} from '@lib/constants';
-import markdownToHtml from '@lib/markdownToHtml';
-import ReactMarkdown from 'react-markdown';
-import {SocialShare} from '@components/social-share';
+import {useRouter} from 'next/router'
+import ErrorPage from 'next/error'
+import Layout from '../../components/layout'
+import {getPostBySlug, getAllPosts} from '../../lib/api'
+import Head from 'next/head'
+import {BLOG_SUBTITLE, HOME_OG_IMAGE_URL} from '../../lib/constants'
+import ReactMarkdown from 'react-markdown'
+import {SocialShare} from '../../components/social-share'
 
-const renderers = {
-  image: (image) => {
-    return <img src={image.src} alt={image.alt} />;
+const renderers: {[nodeType: string]: React.ElementType} = {
+  image: (image: {src: string; alt: string}) => {
+    return <img src={image.src} alt={image.alt} />
   },
-};
+}
 
-export default function Post({post, preview}) {
-  const router = useRouter();
+export default function Post({post}) {
+  const router = useRouter()
   if (!router.isFallback && !post?.slug) {
-    return <ErrorPage statusCode={404} />;
+    return <ErrorPage statusCode={404} />
   }
   return (
-    <Layout preview={preview}>
+    <Layout>
       <>
         <article className="prose w-10/12 md:w-11/12 lg:prose-3xl mx-auto my-10  text-gray-700">
           <Head>
@@ -46,14 +45,14 @@ export default function Post({post, preview}) {
             <ReactMarkdown
               className="markdown"
               children={post.content}
-              renderers={renderers}
+              components={renderers}
             />
             <SocialShare post={post} />
           </div>
         </article>
       </>
     </Layout>
-  );
+  )
 }
 export async function getStaticProps({params}) {
   const post = getPostBySlug(params.slug, [
@@ -65,17 +64,17 @@ export async function getStaticProps({params}) {
     'ogImage',
     'excerpt',
     'coverImage',
-  ]);
+  ])
 
   return {
     props: {
       post,
     },
-  };
+  }
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug']);
+  const posts = getAllPosts(['slug'])
 
   return {
     paths: posts.map((post) => {
@@ -83,8 +82,8 @@ export async function getStaticPaths() {
         params: {
           slug: post.slug,
         },
-      };
+      }
     }),
     fallback: false,
-  };
+  }
 }

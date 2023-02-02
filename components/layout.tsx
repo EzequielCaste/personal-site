@@ -1,10 +1,10 @@
-import {GITHUB_REPOSITORY, MAIN_TITLE} from '../lib/constants';
-import Head from 'next/head';
-import {Navbar} from '../components/navbar';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faLinkedin, faTwitterSquare} from '@fortawesome/free-brands-svg-icons';
+import {GITHUB_REPOSITORY, MAIN_TITLE} from '../lib/constants'
+import Head from 'next/head'
+import {Navbar} from './navbar'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faLinkedin, faTwitterSquare} from '@fortawesome/free-brands-svg-icons'
 
-export default function Layout({preview, children}) {
+export default function Layout({children}) {
   return (
     <>
       <Head>
@@ -56,5 +56,5 @@ export default function Layout({preview, children}) {
         </div>
       </footer>
     </>
-  );
+  )
 }

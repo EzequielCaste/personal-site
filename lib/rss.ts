@@ -1,7 +1,8 @@
+import { Post } from '../types';
 import { BLOG_URL, MAIN_TITLE, BLOG_SUBTITLE } from './constants';
 import markdownToHtml from './markdownToHtml';
 
-export async function generateRssItem(post) {
+export async function generateRssItem(post: Post) {
   const content = await markdownToHtml(post.content || '');
 
   return `
@@ -16,7 +17,7 @@ export async function generateRssItem(post) {
   `;
 }
 
-export async function generateRss(posts) {
+export async function generateRss(posts: Array<Post>) {
   const itemsList = await Promise.all(posts.map(generateRssItem));
 
   return `

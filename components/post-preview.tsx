@@ -1,5 +1,5 @@
-import DateFormatter from '../components/date-formatter';
-import Link from 'next/link';
+import DateFormatter from './date-formatter'
+import Link from 'next/link'
 
 export default function PostPreview({title, date, excerpt, slug}) {
   return (
@@ -14,5 +14,5 @@ export default function PostPreview({title, date, excerpt, slug}) {
       </div>
       <p className="text-lg lg:text-2xl">{excerpt}</p>
     </div>
-  );
+  )
 }

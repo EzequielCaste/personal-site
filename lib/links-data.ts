@@ -8,8 +8,6 @@ import {
   faNpm,
   faReact,
   faSass,
-  faWindows,
-  faUbuntu
 } from '@fortawesome/free-brands-svg-icons';
 
 export const skills = [

@@ -4,7 +4,7 @@ import gfm from 'remark-gfm';
 import remark2rehype from 'remark-rehype';
 import stringify from 'rehype-stringify';
 
-export default async function markdownToHtml(markdownData) {
+export default async function markdownToHtml(markdownData: string) {
   const result = await unified()
     .use(parse)
     .use(gfm)
