@@ -16,11 +16,12 @@ export default function Layout({children}) {
         <main>{children}</main>
       </div>
 
-      <footer className="animate-icons text-center text-gray-200 bg-gray-700 bg-accent-1 border-t border-accent-2">
+      <footer className="text-center text-gray-200 bg-gray-700 bg-accent-1 border-t border-accent-2">
         <div className="container mx-auto p-3 flex justify-between">
           <div className="">
             &copy; 2022 Ezequiel Castellanos{' '}
             <a
+              aria-label="Visit my profile on Twitter"
               href="https://twitter.com/Ezequiel_Caste"
               rel="noopener noreferrer"
               target="_blank"
@@ -35,6 +36,7 @@ export default function Layout({children}) {
               <i className="fab fa-twitter-square"></i>
             </a>{' '}
             <a
+              aria-label="Visit my LinkedIn profile"
               href="https://www.linkedin.com/in/ezequiel-castellanos-a9ab6b1b8/"
               rel="noopener noreferrer"
               target="_blank"
@@ -48,8 +50,9 @@ export default function Layout({children}) {
             </a>
           </div>
           <a
+            aria-label="View code on GitHub"
             href={`${GITHUB_REPOSITORY}`}
-            className="font-medium hover:underline"
+            className="animate-icons font-medium hover:underline"
           >
             View code on GitHub
           </a>

@@ -36,15 +36,25 @@ a {
   width: 10px; /* Mostly for vertical scrollbars */
   height: 10px; /* Mostly for horizontal scrollbars */
 }
-.styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
+.styled-scrollbars::-webkit-scrollbar-thumb {
+  /* Foreground */
   background: rgba(55, 65, 81);
 }
-.styled-scrollbars::-webkit-scrollbar-track { /* Background */
+.styled-scrollbars::-webkit-scrollbar-track {
+  /* Background */
   background: rgb(209 213 219);
 }
 .far,
 .fab,
 .animate-icons {
+  color: salmon;
+  /* animation-name: crazy-colors;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; */
+}
+
+.animate-icons:hover {
   animation-name: crazy-colors;
   animation-duration: 3s;
   animation-timing-function: linear;
@@ -53,7 +63,8 @@ a {
 footer svg {
   display: inline;
 }
-a:nth-of-type(1) .animate-icons {
+
+/* a:nth-of-type(1) .animate-icons {
   animation-delay: 0.2s;
   animation-direction: reverse;
 }
@@ -65,16 +76,16 @@ a:nth-of-type(4) .animate-icons {
 }
 a:nth-of-type(5) .animate-icons {
   animation-delay: 0.8s;
-}
+} */
 @keyframes crazy-colors {
   0% {
     color: peru;
   }
   33% {
-    color: fuchsia;
+    color: salmon;
   }
   66% {
-    color: blueviolet;
+    color: deeppink;
   }
   100% {
     color: peru;
@@ -114,8 +125,8 @@ img + em {
 
 .scroll-down {
   opacity: 1;
-  -webkit-transition: all .5s ease-in 3s;
-  transition: all .5s ease-in 3s;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
 }
 
 .scroll-down {
@@ -132,22 +143,22 @@ img + em {
   z-index: 2;
   -webkit-animation: bounce 2s infinite 2s;
   animation: bounce 2s infinite 2s;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-  transform: scale(1)
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  transform: scale(1);
 }
 
 .scroll-down:before {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
-    transform: rotate(-45deg);
-    display: block;
-    width: 12px;
-    height: 12px;
-    content: "";
-    border: 2px solid rgba(55, 65, 81);
-    border-width: 0px 0 2px 2px;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: '';
+  border: 2px solid rgba(55, 65, 81);
+  border-width: 0px 0 2px 2px;
 }
 
 @keyframes bounce {
