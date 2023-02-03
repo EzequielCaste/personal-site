@@ -5,14 +5,39 @@
         <link>http://ezecastellanos.com.ar</link>
         <description>Blog page by Ezequiel Castellanos</description>
         <language>en</language>
-        <lastBuildDate>Tue, 03 Aug 2021 05:35:07 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 03 Feb 2023 05:35:07 GMT</lastBuildDate>
         <atom:link href="http://ezecastellanos.com.ar" rel="self" type="application/rss+xml"/>
         
     <item>
-      <guid>http://ezecastellanos.com.ar/posts/Color generator</guid>
+      <guid>http://ezecastellanos.com.ar/posts/Powerful-NPM</guid>
+      <title>Powerful NPM</title>
+      <description>The npm command-line utility has many more features that may come in handy when working on your projects.</description>
+      <link>http://ezecastellanos.com.ar/posts/Powerful-NPM</link>
+      <pubDate>Fri, 03 Feb 2023 05:35:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h1>Powerful NPM</h1>
+<p>NPM is one of the first tools or command-line utitiles that developers learn to use but most of us just learn the basic commands like <code>npm install</code> or <code>npm run start</code>. However, there are more things you can do with npm than just installing packages and starting your application.</p>
+<p>Let's start from the definition.</p>
+<h2>What is NPM?</h2>
+<p>Node Package Manager is an online repository for publishing open-source Node.js projects. It also has command-line tools to help you install packages and mange dependencies.</p>
+<h2>Useful commands</h2>
+<ul>
+<li>npm test - to run your tests</li>
+<li>npm build - to build your project</li>
+<li>npm start - to run your project locally</li>
+</ul>
+<h2>Check for outdated packages</h2>
+<p>The reason for this blog post is to share my experience with <strong>npm</strong> and how it helped me solve an issue with outdated packages.</p>
+<p>A few months ago I decided to go back to one of my projects and add a new feature. So I cloned the repository, installed packages with <code>npm install</code>, started up the project but it did not start. I read through the error message and figured out it had something to do with a version number of one the packages. After some trial and error, google searching I found this <strong>npm</strong> command that can be very useful in cases like this.</p>
+<h2>npm outdated</h2>
+<p>If you run <code>npm outdated</code> in the root of your project, it will show you a list of the installed packages like this:</p>
+<p><img src="/images/Powerful-npm/outdated.png" alt="Original design made with Canva"><em>Original design made with Canva</em></p>]]></content:encoded>
+    </item>
+  
+    <item>
+      <guid>http://ezecastellanos.com.ar/posts/Color-generator</guid>
       <title>Color Generator</title>
       <description>Use values.js package to generate color tints and shades</description>
-      <link>http://ezecastellanos.com.ar/posts/Color generator</link>
+      <link>http://ezecastellanos.com.ar/posts/Color-generator</link>
       <pubDate>Tue, 03 Aug 2021 05:35:07 GMT</pubDate>
       <content:encoded><![CDATA[<h1>Color generator</h1>
 <p>If you ever want to build a color generator app please don't try to reinvent the wheel. There are many npm packages to help and assist you and most importantly, save you a lot of time. Sometimes it can be good practice to write your own script but don't let it get too complicated.</p>
@@ -64,10 +89,10 @@ console.log(color.all(10));
     </item>
   
     <item>
-      <guid>http://ezecastellanos.com.ar/posts/Check your head</guid>
+      <guid>http://ezecastellanos.com.ar/posts/Check-your-head</guid>
       <title>Check your <head></title>
       <description>What are meta tags and why are they important?</description>
-      <link>http://ezecastellanos.com.ar/posts/Check your head</link>
+      <link>http://ezecastellanos.com.ar/posts/Check-your-head</link>
       <pubDate>Thu, 10 Jun 2021 05:35:07 GMT</pubDate>
       <content:encoded><![CDATA[<h1>Check your  🤔</h1>
 <p>There are many steps to follow when designing and building a webpage, choosing a color scheme, determining which technologies to use, which hosting site, domain name, etc. That is why it is important to plan <em>before</em> you start writing any line of code. But sometimes we're in a hurry, we want to build a quick webpage and get it uploaded fast. This is where <strong>mistakes</strong> are made. Like the saying goes:</p>
@@ -117,7 +142,7 @@ console.log(color.all(10));
 &#x3C;meta property="og:site_name" content="Ezequiel Castellanos" />
 &#x3C;meta property="og:description" content="Personal Website and Blog" />
 </code></pre>
-<p><img src="/images/Check%20your%20head%200bc2d019ba0e4a8a98ab5def8c090365/Untitled.png" alt="Preview of how a link to a blog post would look like if posted on Facebook"><em>Preview of how a link to a blog post would look like if posted on Facebook</em></p>
+<p><img src="/images/Check%20your%20head/Untitled.png" alt="Preview of how a link to a blog post would look like if posted on Facebook"><em>Preview of how a link to a blog post would look like if posted on Facebook</em></p>
 <hr>
 <h2>Twitter Cards</h2>
 <p>Similar to Open Graph Data, Twitter Cards allows you to attach images and description to Tweets.</p>
@@ -133,7 +158,7 @@ console.log(color.all(10));
   content="https://avatars.githubusercontent.com/u/51804994?s=400&#x26;amp;u=efe88c4acafeb4fe560f666482b1454dca508408&#x26;amp;v=4"
 />
 </code></pre>
-<p><img src="/images/Check%20your%20head%200bc2d019ba0e4a8a98ab5def8c090365/Untitled%201.png" alt="Preview of a Twitter Card for a blog post"><em>Preview of a Twitter Card for a blog post</em></p>
+<p><img src="/images/Check%20your%20head/Untitled%201.png" alt="Preview of a Twitter Card for a blog post"><em>Preview of a Twitter Card for a blog post</em></p>
 <p>Once your twitter card tags are up and running you can use <a href="https://cards-dev.twitter.com/validator">this validator</a> to check-out how it would look. The validator checks for the correct tags and gives you this message if everything went ok:</p>
 <pre><code class="language-javascript">INFO:  Page fetched successfully
 INFO:  24 metatags were found
@@ -148,8 +173,8 @@ INFO:  Card loaded successfully
 </code></pre>
 <p>I highly recommend using <a href="https://realfavicongenerator.net/">https://realfavicongenerator.net/</a> you only have to upload the image you want to use as favicon and the site automatically generates the meta tags and provides a zip file with all the necessary icon files of different sizes.</p>
 <p>Don't have a favicon yet? You can make your own icon with <a href="https://www.canva.com/">https://www.canva.com/</a> It's really easy, mine only took 10 minutes to design.</p>
-<p><img src="/images/Check%20your%20head%200bc2d019ba0e4a8a98ab5def8c090365/Untitled%202.png" alt="Original design made with Canva"><em>Original design made with Canva</em></p>
-<p><img src="/images/Check%20your%20head%200bc2d019ba0e4a8a98ab5def8c090365/Untitled%203.png" alt="Favicon appears to the left of your webpage title." title="TITLE"><em>Favicon appears to the left of your webpage title.</em></p>
+<p><img src="/images/Check%20your%20head/Untitled%202.png" alt="Original design made with Canva"><em>Original design made with Canva</em></p>
+<p><img src="/images/Check%20your%20head/Untitled%203.png" alt="Favicon appears to the left of your webpage title." title="TITLE"><em>Favicon appears to the left of your webpage title.</em></p>
 <hr>
 <h2>Check your </h2>
 <p>Once you have your meta tags, open graph, twitter card and favicon included in your webpage, you can verify how the links to your site will appear in search engines and social media posts. Check your URL with this site:</p>
@@ -168,10 +193,10 @@ INFO:  Card loaded successfully
     </item>
   
     <item>
-      <guid>http://ezecastellanos.com.ar/posts/hello world</guid>
+      <guid>http://ezecastellanos.com.ar/posts/hello-world</guid>
       <title>Hello World!</title>
       <description>Hello, good evening and welcome to The Middle of the Film. Actually, this is the beginning of my blog, the very first post ever! Having said that, Welcome!</description>
-      <link>http://ezecastellanos.com.ar/posts/hello world</link>
+      <link>http://ezecastellanos.com.ar/posts/hello-world</link>
       <pubDate>Tue, 20 Apr 2021 05:35:07 GMT</pubDate>
       <content:encoded><![CDATA[<h1>Hello World!</h1>
 <p><img src="https://y.yarn.co/9ad103b2-da58-41dd-9270-e59ad61dba2e_screenshot.jpg" alt="Welcome!"></p>
@@ -184,7 +209,7 @@ INFO:  Card loaded successfully
 <p>I enjoy making websites, drinking <a href="https://en.wikipedia.org/wiki/Mate_(drink)">mate</a>, baking homemade pizza and bread, and also researching and learning about technology or science. When I'm not coding,</p>
 <p>I started creating websites as a hobby and now I've realized this can be more than a hobby. So I started to teach myself <strong>HTML, CSS and JavaScript</strong>, thanks to the great developer community at freeCodeCamp. Currently learning more in depth <strong>React.js</strong>, <strong>Next.js</strong>, <strong>Tailwind CSS</strong> and <strong>SASS</strong>.</p>
 <h2>The Blog</h2>
-<p>This blog is a nice little fun project I'm building with the help of <a href="https://www.manuelobregozo.com/">Manuel Obregozo</a>. He's been helping me on my developer path with great advice and encouraging me to apply to as many jobs as possible. <strong>First Dev Job here I come!</strong> 🚀</p>
+<p>This blog is a nice little fun project I'm building with the help of <a href="https://techashuman.com/">Manuel Obregozo</a>. He's been helping me on my developer path with great advice and encouraging me to apply to as many jobs as possible. <strong>First Dev Job here I come!</strong> 🚀</p>
 <p>The main idea of this site is to have a working blog and add updates and features in small increments. For a start, the blog is developed with Next.js and Tailwind CSS. I will try to detail all the challenges and obstacles that appear during the development of this blog. Stay tuned! 👋</p>]]></content:encoded>
     </item>
   

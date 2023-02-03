@@ -37,6 +37,8 @@ export function getPostBySlug(slug: string, fields = []): Post {
     }
   })
 
+  console.log({items});
+
   return items
 }
 

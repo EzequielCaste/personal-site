@@ -106,7 +106,12 @@ a:nth-of-type(5) .animate-icons {
 img + em {
   font-family: monospace;
   font-size: 0.8rem;
-  color: #ccc;
+  color: rgba(55,65,81,88);
+}
+.prose li {
+  margin: 8px 0;
+  font-family: monospace;
+  font-size: 0.9rem;
 }
 @media all and (min-width: 700px) {
   img + em {
@@ -118,11 +123,25 @@ img + em {
 .prose {
   line-height: 1.4;
 }
-.prose pre code {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.8rem;
+.prose code {
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  font: 1em / normal 'Roboto Mono', 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas',
+    'source-code-pro', monospace;
+  font-size: 0.9em;
 }
-
+.prose code::before,
+.prose code::after {
+  content: '';
+}
+.prose h2 {
+  margin-top: 1.5rem;
+}
 .scroll-down {
   opacity: 1;
   -webkit-transition: all 0.5s ease-in 3s;

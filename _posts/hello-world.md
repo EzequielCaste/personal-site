@@ -22,6 +22,6 @@ I started creating websites as a hobby and now I've realized this can be more th
 
 ## The Blog
 
-This blog is a nice little fun project I'm building with the help of [Manuel Obregozo](https://www.manuelobregozo.com/). He's been helping me on my developer path with great advice and encouraging me to apply to as many jobs as possible. **First Dev Job here I come!** 🚀
+This blog is a nice little fun project I'm building with the help of [Manuel Obregozo](https://techashuman.com/). He's been helping me on my developer path with great advice and encouraging me to apply to as many jobs as possible. **First Dev Job here I come!** 🚀
 
 The main idea of this site is to have a working blog and add updates and features in small increments. For a start, the blog is developed with Next.js and Tailwind CSS. I will try to detail all the challenges and obstacles that appear during the development of this blog. Stay tuned! 👋

@@ -1,5 +1,5 @@
 import Document, {Html, Head, Main, NextScript} from 'next/document'
-import {HOME_OG_IMAGE_URL} from '../lib/constants'
+import {HOME_OG_IMAGE_URL, MAIN_TITLE} from '../lib/constants'
 import Script from 'next/script'
 
 class MyDocument extends Document {
@@ -9,6 +9,8 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta content="text/html; charset=utf-8" httpEquiv="Content-Type" />
+          <title>{MAIN_TITLE}</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta
             name="google-site-verification"
             content="0JzJgTcu_xAGmKyIC7HRFBWi7IWx0ZEzkc-bzfR6UfM"

@@ -83,7 +83,7 @@ Facebook invented the Open Graph protocol to provide more metadata for our websi
 <meta property="og:description" content="Personal Website and Blog" />
 ```
 
-![Preview of how a link to a blog post would look like if posted on Facebook](/images/Check%20your%20head%200bc2d019ba0e4a8a98ab5def8c090365/Untitled.png)_Preview of how a link to a blog post would look like if posted on Facebook_
+![Preview of how a link to a blog post would look like if posted on Facebook](/images/Check%20your%20head/Untitled.png)_Preview of how a link to a blog post would look like if posted on Facebook_
 
 ---
 
@@ -106,7 +106,7 @@ Whenever a user Tweets a link to your content, the tweet will include a â€œCardâ
 />
 ```
 
-![Preview of a Twitter Card for a blog post](/images/Check%20your%20head%200bc2d019ba0e4a8a98ab5def8c090365/Untitled%201.png)_Preview of a Twitter Card for a blog post_
+![Preview of a Twitter Card for a blog post](/images/Check%20your%20head/Untitled%201.png)_Preview of a Twitter Card for a blog post_
 
 Once your twitter card tags are up and running you can use [this validator](https://cards-dev.twitter.com/validator) to check-out how it would look. The validator checks for the correct tags and gives you this message if everything went ok:
 
@@ -133,9 +133,9 @@ I highly recommend using [https://realfavicongenerator.net/](https://realfavicon
 
 Don't have a favicon yet? You can make your own icon with [https://www.canva.com/](https://www.canva.com/) It's really easy, mine only took 10 minutes to design.
 
-![Original design made with Canva](/images/Check%20your%20head%200bc2d019ba0e4a8a98ab5def8c090365/Untitled%202.png)_Original design made with Canva_
+![Original design made with Canva](/images/Check%20your%20head/Untitled%202.png)_Original design made with Canva_
 
-![Favicon appears to the left of your webpage title.](/images/Check%20your%20head%200bc2d019ba0e4a8a98ab5def8c090365/Untitled%203.png 'TITLE')_Favicon appears to the left of your webpage title._
+![Favicon appears to the left of your webpage title.](/images/Check%20your%20head/Untitled%203.png 'TITLE')_Favicon appears to the left of your webpage title._
 
 ---
 

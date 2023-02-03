@@ -1,5 +1,4 @@
 import Layout from '../../components/layout'
-import {getPostBySlug, getAllPosts} from '../../lib/api'
 import Head from 'next/head'
 import {PROJECT_SUBTITLE} from '../../lib/constants'
 import {projects} from '../../lib/project-list'

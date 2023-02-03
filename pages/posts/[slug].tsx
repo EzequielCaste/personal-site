@@ -6,8 +6,12 @@ import Head from 'next/head'
 import {BLOG_SUBTITLE, HOME_OG_IMAGE_URL} from '../../lib/constants'
 import ReactMarkdown from 'react-markdown'
 import {SocialShare} from '../../components/social-share'
+import gfm from 'remark-gfm'
 
 const renderers: {[nodeType: string]: React.ElementType} = {
+  /*   code: () => {
+    return <code></code>
+  }, */
   image: (image: {src: string; alt: string}) => {
     return <img src={image.src} alt={image.alt} />
   },
@@ -41,12 +45,10 @@ export default function Post({post}) {
             />
             <meta property="og:image" content={HOME_OG_IMAGE_URL} />
           </Head>
-          <div className="markdown">
-            <ReactMarkdown
-              className="markdown"
-              children={post.content}
-              components={renderers}
-            />
+          <div className="">
+            <ReactMarkdown>
+              {post.content}
+            </ReactMarkdown>
             <SocialShare post={post} />
           </div>
         </article>
