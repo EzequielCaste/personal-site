@@ -25,13 +25,13 @@ export default function Post({post}) {
           <Head>
             <title>
               {post.title} | {BLOG_SUBTITLE}
-              <link
-                rel="canonical"
-                href={encodeURI(
-                  `https://ezecastellanos.com.ar/posts/${post?.slug}`
-                )}
-              />
             </title>
+            <link
+              rel="canonical"
+              href={encodeURI(
+                `https://ezecastellanos.com.ar/posts/${post?.slug}`
+              )}
+            />
             <meta property="og:description" content={post.excerpt} />
             <meta
               data-n-head="ssr"

@@ -13,7 +13,7 @@ export const Projects = () => {
         Some of my projects
       </h2>
       <div>
-        {projects.map((project) => (
+        {projects.slice(0, 3).map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}
       </div>

@@ -41,7 +41,7 @@ export const ProjectCard = ({project}) => {
               ))}
             </ul>
           </div>
-          <p className="mt-2 text-md">{description}</p>
+          <p className="mt-2 text-base">{description}</p>
 
           <div className="flex item-center justify-center mt-3">
             <a

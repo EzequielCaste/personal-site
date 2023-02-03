@@ -19,7 +19,7 @@ export default function Layout({children}) {
       <footer className="text-center text-gray-200 bg-gray-700 bg-accent-1 border-t border-accent-2">
         <div className="container mx-auto p-3 flex justify-between">
           <div className="">
-            &copy; 2022 Ezequiel Castellanos{' '}
+            &copy; 2023 Ezequiel Castellanos{' '}
             <a
               aria-label="Visit my profile on Twitter"
               href="https://twitter.com/Ezequiel_Caste"
