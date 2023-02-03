@@ -22,13 +22,16 @@ export default function Post({post}) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
+  
+  const pageTitle = `${post.title} | ${BLOG_SUBTITLE}`
+
   return (
     <Layout>
       <>
         <article className="prose w-10/12 md:w-11/12 lg:prose-3xl mx-auto my-10  text-gray-700">
           <Head>
             <title>
-              {post.title} | {BLOG_SUBTITLE}
+              {pageTitle}
             </title>
             <link
               rel="canonical"

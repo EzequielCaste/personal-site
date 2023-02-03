@@ -24,7 +24,7 @@ Node Package Manager is an online repository for publishing open-source Node.js 
 
 The reason for this blog post is to share my experience with **npm** and how it helped me solve an issue with outdated packages. 
 
-A few months ago I decided to go back to one of my projects and add a new feature. So I cloned the repository, installed packages with `npm install`, started up the project but it did not start. I read through the error message and figured out it had something to do with a version number of one the packages. After some trial and error, google searching I found this **npm** command that can be very useful in cases like this.
+A few months ago I decided to go back to one of my projects and add a new feature. So I cloned the repository, installed packages with `npm install`, started up the project but it did not start. I read through the error message and figured out it had something to do with a version number of one the packages. After some trial and error, google searching I found this **npm** command that can be very useful in similar cases.
 
 ## npm outdated
 
@@ -53,7 +53,7 @@ Ok, so now that you have the list of outdated packages it's time to update them.
 
 ## npm update
 
-This command will update all the packages to the latest version respecting the semver constraints. The easy way of updating all packages is by running the command: `npm update`. Have in mind that this will not update to **MAJOR** verions. In the case you want to update a specific package to the latest version, even to the latest MAJOR version, use `npm install package-name`.
+This command will update all the packages to the latest version respecting the semver constraints. The easy way of updating all packages is by running the command: `npm update`. Have in mind that this will not update to **MAJOR** versions. In the case you want to update a specific package to the latest version, even to the latest MAJOR version, use `npm install package-name`.
 
 
 ---
