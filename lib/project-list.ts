@@ -13,17 +13,7 @@ export const projects = [
     semantic-ui-react: used for buttons and modal`,
     codeLink: 'https://github.com/EzequielCaste/Memory-game',
     demoLink: 'https://ezecaste-memory-game.netlify.app/',
-  },
-  {
-    name: 'Portfolio / Blog Site',
-    image: 'portfolio.webp',
-    tags: ['Next.JS', 'TypeScript', 'Tailwind CSS', 'React-Markdown'],
-    description: `
-    My portfolio webpage using Next.js and Tailwind CSS to showcase some of my front-end projects. This portfolio site also hosts a blog, which I write to share my insights and knowledge on various front-end development topics. The blog posts are in markdown format, which is converted to HTML markup using the react-markdown library.
-    `,
-    codeLink: 'https://github.com/EzequielCaste/personal-site',
-    demoLink: 'https://www.ezecastellanos.com.ar/',
-  },
+  },  
   {
     name: 'Social Media App',
     image: 'social-app.webp',
@@ -54,6 +44,16 @@ export const projects = [
     description: `A great way to learn React is by building apps. With this weather app I learned about React Router, API Fetch, Async/Await and Lifting State.`,
     codeLink: 'https://github.com/EzequielCaste/weather-app',
     demoLink: 'https://weather-app-ecaste.vercel.app/',
+  },
+  {
+    name: 'Portfolio / Blog Site',
+    image: 'portfolio.webp',
+    tags: ['Next.JS', 'TypeScript', 'Tailwind CSS', 'React-Markdown'],
+    description: `
+    My portfolio webpage using Next.js and Tailwind CSS to showcase some of my front-end projects. This portfolio site also hosts a blog, which I write to share my insights and knowledge on various front-end development topics. The blog posts are in markdown format, which is converted to HTML markup using the react-markdown library.
+    `,
+    codeLink: 'https://github.com/EzequielCaste/personal-site',
+    demoLink: 'https://www.ezecastellanos.com.ar/',
   },
   {
     name: 'AO Copiers webpage',
