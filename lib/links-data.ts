@@ -97,7 +97,7 @@ export const links = [
   },
   {
     id: 6,
-    url: 'https://github.com/EzequielCaste/CV/raw/main/Ezequiel%20Castellanos%20Resume.pdf',
+    url: 'https://github.com/EzequielCaste/CV/blob/main/Frontend%20Developer%20Ezequiel%20Castellanos.pdf',
     text: 'resume',
   },
 ];
