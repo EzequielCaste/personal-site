@@ -29,7 +29,7 @@ export default function Layout({children}) {
               <span className="hidden">Twitter</span>
               <FontAwesomeIcon
                 size="1x"
-                className="text-gray-200  animate-icons"
+                className="text-green-200"
                 icon={faTwitterSquare}
               />
 
@@ -44,7 +44,7 @@ export default function Layout({children}) {
               <span className="hidden">Linkedin</span>
               <FontAwesomeIcon
                 size="1x"
-                className="text-gray-200  animate-icons"
+                className="text-green-200"
                 icon={faLinkedin}
               />
             </a>
@@ -52,7 +52,7 @@ export default function Layout({children}) {
           <a
             aria-label="View code on GitHub"
             href={`${GITHUB_REPOSITORY}`}
-            className="animate-icons font-medium hover:underline"
+            className="text-green-200 font-medium hover:underline"
           >
             View code on GitHub
           </a>

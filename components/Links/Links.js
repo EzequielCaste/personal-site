@@ -25,7 +25,7 @@ export const Links = () => {
             <span className="hidden">GitHub</span>
             <FontAwesomeIcon
               size="3x"
-              className="animate-icons"
+              className="text-gray-700 transition ease-in-out duration-300 hover:text-fuchsia-700"
               icon={faGithub}
             />
           </a>
@@ -39,7 +39,7 @@ export const Links = () => {
             <span className="hidden">Twitter</span>
             <FontAwesomeIcon
               size="3x"
-              className="animate-icons"
+              className="text-gray-700 transition ease-in-out duration-300 hover:text-fuchsia-700"
               icon={faTwitter}
             />
           </a>
@@ -47,7 +47,7 @@ export const Links = () => {
             <span className="hidden">Email</span>
             <FontAwesomeIcon
               size="3x"
-              className="animate-icons"
+              className="text-gray-700 transition ease-in-out duration-300 hover:text-fuchsia-700"
               icon={faEnvelope}
             />
           </a>
@@ -61,7 +61,7 @@ export const Links = () => {
             <span className="hidden">Codepen</span>
             <FontAwesomeIcon
               size="3x"
-              className="animate-icons"
+              className="text-gray-700 transition ease-in-out duration-300 hover:text-fuchsia-700"
               icon={faCodepen}
             />
           </a>
@@ -74,12 +74,12 @@ export const Links = () => {
             <span className="hidden">Linkedin</span>
             <FontAwesomeIcon
               size="3x"
-              className="animate-icons"
+              className="text-gray-700 transition ease-in-out duration-300 hover:text-fuchsia-700"
               icon={faLinkedin}
             />
           </a>
         </div>
-        <a aria-label='Scroll down' href="#" className="scroll-down" address="true"></a>
+        <span title='Keep Scrolling...' aria-label='Scroll down' href="#" className="scroll-down" address="true"></span>
       </div>
     </>
   );
