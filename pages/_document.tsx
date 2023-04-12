@@ -64,22 +64,22 @@ class MyDocument extends Document {
           <meta name="twitter:url" content="https://ezecastellanos.com.ar" />
           <meta name="twitter:image" content={HOME_OG_IMAGE_URL} />
 
-          <Script
-            async
+          <Script            
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+            strategy='afterInteractive'
           />
           <Script
-            dangerouslySetInnerHTML={{
-              __html: `
+            id="google-analytics" strategy="afterInteractive">
+              {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
               page_path: window.location.pathname,
             });
-          `,
-            }}
-          />
+          `}
+          </Script>
+          
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="msapplication-TileColor" content="#da532c" />
