@@ -9,13 +9,13 @@ export const Navbar = () => {
     'text-white px-3 py-2 hover:bg-gray-900 rounded-md text-sm font-medium capitalize ';
 
   const mobileLinks =
-    'block text-gray-100 px-3 py-2 rounded-md text-base font-medium hover:bg-gray-900 hover:text-white capitalize';
+    'block text-gray-100 px-3 py-2 text-center rounded-md text-base font-medium hover:bg-gray-900 hover:text-white capitalize';
   const resumeLink = `${mobileLinks} bg-gray-300 text-gray-700`;
 
 
   return (
     <nav className="fixed bg-gray-700 w-full shadow-lg z-10">
-      <div className={`container ${menuToggle ? 'h-screen' : '' } mx-auto px-2`}>
+      <div className={`container max-w-4xl mx-auto px-2`}>
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
@@ -77,7 +77,7 @@ export const Navbar = () => {
           className={`${menuToggle ? '' : 'hidden'} `}          
           id="mobile-menu"
         >
-          <div className="flex flex-col justify-evenly px-2 pt-2 pb-3 space-y-2 h-full">
+          <div className="flex flex-col justify-evenly px-2 pt-2 pb-8 space-y-2 h-full">
             {links.map((link) => {
               const {id, url, text} = link;
               return (

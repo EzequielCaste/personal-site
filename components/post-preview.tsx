@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function PostPreview({title, date, excerpt, slug}) {
   return (
     <div>
-      <h3 className="text-3xl leading-snug lg:text-4xl text-blue-800">
+      <h3 className="font-medium text-2xl">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <span className="hover:underline">{title}</span>
         </Link>
