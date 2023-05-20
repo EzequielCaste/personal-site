@@ -16,6 +16,11 @@ export const skills = [
     name: "React"
   },
   {
+    icon: null,
+    name: "Next.js",
+    class:"devicon-nextjs-plain-wordmark"
+  },
+ /*  {
     icon: faJsSquare,
     name: "JavaScript"
   },
@@ -39,7 +44,7 @@ export const skills = [
   {
     icon: faNpm,
     name: "NPM"
-  },
+  }, */
   {
     icon: faNodeJs,
     name: "Node.js"
@@ -49,14 +54,14 @@ export const skills = [
     name: "GraphQL",
     class: "devicon-graphql-plain"
   },
-  {
+  /* {
     icon: faGithub,
     name: "GitHub"
   },  
   {
     icon: faGit,
     name: "Git"
-  },
+  }, */
   {
     icon: null,
     name: "MongoDB",
