@@ -1,5 +1,5 @@
 import React from 'react';
-import Scroller from '../Scroller';
+import {Scroller} from '../Scroller';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  
   faGithub,

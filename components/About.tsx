@@ -1,5 +1,5 @@
 import React from 'react'
-import Scroller from './Scroller/index'
+import {Scroller} from './Scroller/index'
 
 export const About = () => {
   return (

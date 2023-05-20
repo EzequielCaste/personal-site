@@ -1,7 +1,7 @@
 import {MAIN_TITLE} from '../lib/constants'
 import Head from 'next/head'
 import {Navbar} from './navbar'
-import Footer from './Footer'
+import {Footer} from './Footer'
 
 export default function Layout({children}) {
   return (

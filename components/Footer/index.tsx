@@ -3,7 +3,7 @@ import {GITHUB_REPOSITORY} from '../../lib/constants'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faLinkedin, faTwitterSquare} from '@fortawesome/free-brands-svg-icons'
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="text-center text-gray-200 bg-gray-700 bg-accent-1 border-t border-accent-2">
         <div className="container mx-auto p-3 flex justify-between items-center">
@@ -49,5 +49,3 @@ const Footer = () => {
       </footer>
   )
 }
-
-export default Footer
